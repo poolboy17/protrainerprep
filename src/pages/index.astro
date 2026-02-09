@@ -4,9 +4,12 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Note from '~/components/widgets/Note.astro';
 
 const metadata = {
   title: 'Pro Trainer Prep — Your Independent Guide to Fitness Certifications',
@@ -25,10 +28,18 @@ const metadata = {
       },
       { text: 'Compare Certifications', href: '/blog/fitness-certification-guide' },
     ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&fit=crop',
+      alt: 'Modern gym interior with equipment and natural lighting',
+    }}
   >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-b from-green-50 via-white to-transparent dark:from-slate-900 dark:via-slate-800"></div>
+    </Fragment>
+
     <Fragment slot="title">
       You Already Know the Gym.<br/>
-      <span class="text-accent dark:text-white">Now Make It Your Career.</span>
+      <span class="text-accent">Now Make It Your Career.</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -39,11 +50,25 @@ const metadata = {
     </Fragment>
   </Hero>
 
+  <Note title="Independent & Unbiased:" description="We're not owned by any certification company. Every review uses real cost data and honest analysis." icon="tabler:shield-check" />
+
+  <Stats
+    title="The Numbers That Matter"
+    subtitle="Real data from industry sources — not marketing claims."
+    stats={[
+      { title: 'Job Growth by 2032', amount: '14%' },
+      { title: 'Median Salary', amount: '$46K' },
+      { title: 'Cert Cost (NCSF)', amount: '$399' },
+      { title: 'Months to Certify', amount: '3–6' },
+    ]}
+  />
+
   <Features
     id="why-trust-us"
     tagline="Why Pro Trainer Prep"
     title="The certification guide that treats you like an adult"
-    subtitle="We're not owned by any certification company. We compare every option with real cost data so you can make the right call."
+    subtitle="We compare every option with real cost data so you can make the right call."
+    columns={3}
     items={[
       {
         title: 'Real Cost Comparisons',
@@ -60,15 +85,132 @@ const metadata = {
         description: 'Salary data, client acquisition strategies, and business plans — not just exam prep tips.',
         icon: 'tabler:briefcase',
       },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features>
+
+  <Content
+    isReversed
+    tagline="Who This Is For"
+    title="Built for career changers, not college kids"
+    items={[
       {
-        title: 'Written for Career Changers',
-        description: 'You are not 22 and fresh out of college. Our content speaks to adults making a real career move.',
+        title: 'You already train consistently',
+        description: 'You know your way around a gym. Now you want to get paid for it.',
+        icon: 'tabler:barbell',
+      },
+      {
+        title: 'You are thinking about a career switch',
+        description: 'Desk job burnout is real. This is a path out — with realistic expectations.',
         icon: 'tabler:arrows-exchange',
       },
       {
+        title: 'Budget matters to you',
+        description: 'You are not going to drop $1,500 on a cert without knowing your options first.',
+        icon: 'tabler:wallet',
+      },
+      {
+        title: 'You want the truth, not a sales pitch',
+        description: 'Every other "review" site is funded by the cert companies they review. We are not.',
+        icon: 'tabler:eye-check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=80&fit=crop',
+      alt: 'Person doing strength training with dumbbells',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Your background is your advantage</h3>
+      Life experience, people skills, and real-world discipline beat a textbook every time. The best trainers we've talked to started exactly where you are now.
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    tagline="The Smart Choice"
+    title="Why NCSF is our top pick for most people"
+    items={[
+      {
+        title: 'NCCA-accredited — same standard as NASM',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Total 5-year cost: ~$699 vs NASM at ~$1,397',
+        icon: 'tabler:pig-money',
+      },
+      {
+        title: 'Lowest recertification: $50 + only 10 CEUs',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Accepted at all major gym chains',
+        icon: 'tabler:building',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80&fit=crop',
+      alt: 'Personal trainer helping client with exercise form',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Half the cost. Same accreditation.</h3>
+      The gym that hires you will check if your cert is NCCA-accredited. They won't care which logo is on it.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Steps
+    title="Your Path from Gym Regular to Certified Pro"
+    subtitle="A realistic 4–6 month timeline. No degree required."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Decide if it is right for you</span>',
+        description: 'Read our honest pros and cons. Look at real salary data ($25–32K year one, $40–55K by year three). This is a career move, not a hobby.',
+        icon: 'tabler:brain',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Pick the right certification</span>',
+        description: 'NCSF, NASM, ACE, ISSA — they are not the same. We break down cost, difficulty, employer recognition, and recertification fees side by side.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Study and pass your exam</span>',
+        description: 'Most exams take 8–12 weeks of prep at 1–2 hours per day. Pass rates are 60–75% — you need to study, but it is not the MCAT.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Land your first job and build your book</span>',
+        description: 'Get hired at a gym, survive floor hours, get your first 10 clients, and start building the business that actually pays the bills.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&fit=crop',
+      alt: 'Personal trainer with client in gym setting',
+    }}
+  />
+
+  <Features
+    title="What sets us apart"
+    subtitle="There are dozens of certification review sites. Most are owned by the companies they review."
+    columns={3}
+    items={[
+      {
         title: 'Data-Backed Everything',
-        description: 'Every claim comes with numbers. Salary ranges, pass rates, recertification costs — all sourced.',
+        description: 'Every claim comes with numbers. Salary ranges, pass rates, recertification costs — all sourced and verified.',
         icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Written for Adults',
+        description: 'You are not 22 and fresh out of college. Our content speaks to people making a real career transition.',
+        icon: 'tabler:user-check',
       },
       {
         title: 'No Gatekeeping',
@@ -78,37 +220,14 @@ const metadata = {
     ]}
   />
 
-  <Steps
-    title="How to Become a Personal Trainer"
-    subtitle="The real path from gym regular to certified professional — no degree required."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Decide if it is right for you</span>',
-        description: 'Read our honest pros and cons. Look at real salary data. Talk to working trainers. This is a career move, not a hobby.',
-        icon: 'tabler:brain',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Pick the right certification</span>',
-        description: 'NCSF, NASM, ACE, ISSA — they are not the same. We break down cost, difficulty, employer recognition, and recertification fees.',
-        icon: 'tabler:certificate',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Study and pass your exam</span>',
-        description: 'Most exams take 3-6 months of prep. We cover what to study, how real trainers passed on the first try, and what to expect on test day.',
-        icon: 'tabler:book',
-      },
-      {
-        title: 'Step 4: <span class="font-medium">Land your first job and build your book</span>',
-        description: 'Get hired at a gym, get your first 10 clients, and start building the business that actually pays the bills.',
-        icon: 'tabler:rocket',
-      },
-    ]}
-  />
-
   <BlogLatestPosts
     title="Latest Articles"
     information="In-depth guides, certification reviews, and career advice for aspiring personal trainers."
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
 
   <FAQs
     title="Common Questions"
@@ -122,15 +241,15 @@ const metadata = {
       },
       {
         title: 'How much do personal trainers actually make?',
-        description: 'Year 1 averages $30-45K depending on location and setting. Experienced trainers at busy gyms or running independent businesses can reach $60-100K+. We break down realistic numbers in our salary guide.',
+        description: 'Year 1 averages $25–32K at a commercial gym. Experienced trainers at busy gyms or running independent businesses can reach $60–100K+. We break down realistic numbers in our salary guide.',
       },
       {
         title: 'Which certification should I get?',
-        description: 'For most people, NCSF offers the best value — NCCA-accredited (same as NASM), half the price, and accepted at major gym chains. But the right cert depends on your goals, budget, and timeline.',
+        description: 'For most people, NCSF offers the best value — NCCA-accredited (same as NASM), roughly half the price, and accepted at major gym chains. But the right cert depends on your goals, budget, and timeline.',
       },
       {
         title: 'How long does it take to get certified?',
-        description: 'Most people study for 3-6 months while working their current job. Some accelerated programs can get you certified in 4-8 weeks if you study full-time.',
+        description: 'Most people study for 3–6 months while working their current job. Some accelerated programs can get you certified in 4–8 weeks if you study full-time.',
       },
       {
         title: 'Is personal training a good career in 2026?',
@@ -141,7 +260,11 @@ const metadata = {
         description: 'We earn affiliate commissions when you purchase through our links (at no extra cost to you). This is how we keep the site free. We review every certification honestly — including the ones that do not pay us.',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50/30 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
 
   <CallToAction
     actions={[
@@ -155,7 +278,12 @@ const metadata = {
   >
     <Fragment slot="title">Ready to make the move?</Fragment>
     <Fragment slot="subtitle">
-      Our complete guide covers everything from choosing a certification to landing your first job. No fluff, no upsells — just the roadmap.
+      Our complete guide covers everything from choosing a certification to landing your first job.<br class="hidden md:inline" />
+      No fluff, no upsells — just the roadmap.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-t from-green-100 via-green-50 to-transparent dark:from-slate-800 dark:via-slate-900"></div>
     </Fragment>
   </CallToAction>
 </Layout>
