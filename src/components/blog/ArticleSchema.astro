@@ -1,0 +1,39 @@
+---
+/**
+ * Article/BlogPosting JSON-LD structured data.
+ * Add to every blog post page for SEO.
+ */
+
+export interface Props {
+  title: string;
+  description?: string;
+  publishDate?: Date;
+  updateDate?: Date;
+  author?: string;
+  image?: string;
+  url: string;
+}
+
+const { title, description, publishDate, updateDate, author, image, url } = Astro.props;
+
+const jsonLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "url": url,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pro Trainer Prep",
+    "url": "https://protrainerprep.com",
+  },
+};
+
+if (description) jsonLd.description = description;
+if (author) jsonLd.author = { "@type": "Person", "name": author };
+if (publishDate) jsonLd.datePublished = publishDate.toISOString();
+if (updateDate) jsonLd.dateModified = updateDate.toISOString();
+else if (publishDate) jsonLd.dateModified = publishDate.toISOString();
+if (image) jsonLd.image = image;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

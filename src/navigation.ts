@@ -8,45 +8,15 @@ export const headerData = {
     },
     {
       text: 'Certifications',
-      links: [
-        {
-          text: 'Certification Guide',
-          href: getPermalink('/blog/fitness-certification-guide'),
-        },
-        {
-          text: 'NCSF CPT Review',
-          href: getPermalink('/blog/ncsf-cpt-review'),
-        },
-        {
-          text: 'NASM vs NCSF',
-          href: getPermalink('/blog/nasm-vs-ncsf'),
-        },
-        {
-          text: 'All Cert Reviews',
-          href: getPermalink('/category/certifications'),
-        },
-      ],
+      href: getPermalink('/blog/fitness-certification-guide'),
     },
     {
-      text: 'Career & Money',
-      links: [
-        {
-          text: 'Personal Trainer Salary',
-          href: getPermalink('/blog/personal-trainer-salary'),
-        },
-        {
-          text: 'How to Get Clients',
-          href: getPermalink('/blog/get-first-10-clients'),
-        },
-        {
-          text: 'All Career Articles',
-          href: getPermalink('/category/career'),
-        },
-      ],
+      text: 'Career Change',
+      href: getPermalink('/blog/career-change-fitness-guide'),
     },
     {
-      text: 'Blog',
-      href: getBlogPermalink(),
+      text: 'Career Building',
+      href: getPermalink('/blog/career-building-guide'),
     },
   ],
   actions: [],
@@ -59,39 +29,35 @@ export const footerData = {
       links: [
         { text: 'Become a Personal Trainer', href: getPermalink('/blog/how-to-become-personal-trainer') },
         { text: 'Certification Guide', href: getPermalink('/blog/fitness-certification-guide') },
-        { text: 'Personal Trainer Salary', href: getPermalink('/blog/personal-trainer-salary') },
+        { text: 'Career Change Guide', href: getPermalink('/blog/career-change-fitness-guide') },
+        { text: 'Career Building Guide', href: getPermalink('/blog/career-building-guide') },
       ],
     },
     {
-      title: 'Certifications',
+      title: 'Popular Comparisons',
       links: [
-        { text: 'NCSF CPT Review', href: getPermalink('/blog/ncsf-cpt-review') },
+        { text: 'NASM vs ACE vs ISSA', href: getPermalink('/blog/nasm-vs-ace-vs-issa') },
         { text: 'NASM vs NCSF', href: getPermalink('/blog/nasm-vs-ncsf') },
         { text: 'Cheapest Certifications', href: getPermalink('/blog/cheapest-personal-trainer-certifications') },
       ],
     },
     {
-      title: 'Resources',
+      title: 'Career Resources',
       links: [
-        { text: 'All Articles', href: getBlogPermalink() },
-        { text: 'Career Advice', href: getPermalink('/category/career') },
-        { text: 'Business Tips', href: getPermalink('/category/business') },
-      ],
-    },
-    {
-      title: 'Legal',
-      links: [
-        { text: 'Privacy Policy', href: getPermalink('/privacy') },
-        { text: 'Terms of Service', href: getPermalink('/terms') },
+        { text: 'Personal Trainer Salary', href: getPermalink('/blog/personal-trainer-salary') },
+        { text: 'Get Your First 10 Clients', href: getPermalink('/blog/get-first-10-clients') },
+        { text: 'NCSF CPT Review', href: getPermalink('/blog/ncsf-cpt-review') },
       ],
     },
   ],
   secondaryLinks: [
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms of Service', href: getPermalink('/terms') },
   ],
-  socialLinks: [],
+  socialLinks: [
+    { ariaLabel: 'RSS', icon: 'tabler:rss', href: '/rss.xml' },
+  ],
   footNote: `
-    © ${new Date().getFullYear()} Pro Trainer Prep · All rights reserved.<br/>
-    <span class="text-xs">Affiliate Disclosure: We earn commissions from qualifying purchases at no extra cost to you.</span>
+    © ${new Date().getFullYear()} Pro Trainer Prep · All rights reserved.
   `,
 };

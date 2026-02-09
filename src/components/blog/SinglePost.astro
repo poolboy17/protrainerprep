@@ -4,9 +4,12 @@ import { Icon } from 'astro-icon/components';
 import Image from '~/components/common/Image.astro';
 import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
+import Breadcrumbs from '~/components/blog/Breadcrumbs.astro';
+import ArticleSchema from '~/components/blog/ArticleSchema.astro';
 
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
+import { getBreadcrumbs } from '~/utils/breadcrumbs';
 
 import type { Post } from '~/types';
 
@@ -16,10 +19,23 @@ export interface Props {
 }
 
 const { post, url } = Astro.props;
+
+const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
 ---
+
+<ArticleSchema
+  title={post.title}
+  description={post.excerpt}
+  publishDate={post.publishDate}
+  updateDate={post.updateDate}
+  author={post.author}
+  image={typeof post.image === 'string' ? post.image : undefined}
+  url={String(url)}
+/>
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
   <article>
+    <Breadcrumbs items={breadcrumbItems} />
     <header
       class={post.image
         ? 'intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade'
