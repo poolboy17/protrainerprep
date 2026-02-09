@@ -1,0 +1,60 @@
+---
+export interface Choice {
+  label: string;
+  reasons: string[];
+  highlight?: boolean;
+  affiliateUrl?: string;
+}
+
+export interface Props {
+  choices: Choice[];
+}
+
+const { choices = [] } = Astro.props;
+---
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  {choices.map((choice) => (
+    <div class:list={[
+      'rounded-xl border-2 p-5 transition',
+      choice.highlight
+        ? 'border-primary bg-green-50/50 shadow-md'
+        : 'border-gray-200 bg-white'
+    ]}>
+      {choice.highlight && (
+        <span class="inline-block rounded-full bg-primary px-3 py-0.5 text-xs font-bold text-white mb-3">
+          Our Pick
+        </span>
+      )}
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Choose {choice.label} if…</h3>
+      <ul class="space-y-2">
+        {choice.reasons.map((reason) => (
+          <li class="flex items-start gap-2 text-sm text-gray-700">
+            <svg class="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+            <span>{reason}</span>
+          </li>
+        ))}
+      </ul>
+      {choice.affiliateUrl && (
+        <a
+          href={choice.affiliateUrl}
+          target="_blank"
+          rel="noopener sponsored"
+          class:list={[
+            'mt-4 inline-flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold transition',
+            choice.highlight
+              ? 'bg-primary text-white hover:bg-secondary'
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          ]}
+        >
+          Learn More
+          <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      )}
+    </div>
+  ))}
+</div>

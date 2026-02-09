@@ -1,0 +1,42 @@
+---
+export interface Props {
+  title?: string;
+  verdict: string;
+  rating?: number;
+  affiliateUrl?: string;
+  affiliateLabel?: string;
+}
+
+const { title = 'Our Verdict', verdict, rating, affiliateUrl, affiliateLabel = 'Check Current Price' } = Astro.props;
+
+const ratingDisplay = rating ? `${rating}/5` : null;
+---
+
+<div class="not-prose my-8 rounded-xl border-2 border-primary/20 bg-gradient-to-br from-green-50 to-white p-6 shadow-sm">
+  <div class="flex items-start justify-between gap-4 flex-wrap">
+    <div class="flex-1">
+      <p class="text-xs font-bold uppercase tracking-widest text-primary mb-1">{title}</p>
+      <p class="text-lg font-semibold text-gray-900 leading-snug">{verdict}</p>
+    </div>
+    {ratingDisplay && (
+      <div class="flex flex-col items-center justify-center rounded-lg bg-primary px-4 py-2 min-w-[70px]">
+        <span class="text-2xl font-bold text-white">{ratingDisplay}</span>
+      </div>
+    )}
+  </div>
+  {affiliateUrl && (
+    <div class="mt-4">
+      <a
+        href={affiliateUrl}
+        target="_blank"
+        rel="noopener sponsored"
+        class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-secondary"
+      >
+        {affiliateLabel}
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
+    </div>
+  )}
+</div>

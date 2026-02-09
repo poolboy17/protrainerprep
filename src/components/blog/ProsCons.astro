@@ -1,0 +1,48 @@
+---
+export interface Props {
+  pros: string[];
+  cons: string[];
+}
+
+const { pros = [], cons = [] } = Astro.props;
+---
+
+<div class="not-prose my-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="rounded-xl border border-green-200 bg-green-50/50 p-5">
+    <h3 class="flex items-center gap-2 text-base font-bold text-green-800 mb-3">
+      <svg class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+      What We Like
+    </h3>
+    <ul class="space-y-2">
+      {pros.map((pro) => (
+        <li class="flex items-start gap-2 text-sm text-gray-700">
+          <svg class="h-4 w-4 mt-0.5 flex-shrink-0 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>{pro}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="rounded-xl border border-red-200 bg-red-50/50 p-5">
+    <h3 class="flex items-center gap-2 text-base font-bold text-red-800 mb-3">
+      <svg class="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      What Could Be Better
+    </h3>
+    <ul class="space-y-2">
+      {cons.map((con) => (
+        <li class="flex items-start gap-2 text-sm text-gray-700">
+          <svg class="h-4 w-4 mt-0.5 flex-shrink-0 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          <span>{con}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

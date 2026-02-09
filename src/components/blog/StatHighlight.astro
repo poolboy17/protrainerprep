@@ -1,0 +1,25 @@
+---
+export interface StatItem {
+  value: string;
+  label: string;
+  source?: string;
+}
+
+export interface Props {
+  stats: StatItem[];
+}
+
+const { stats = [] } = Astro.props;
+---
+
+<div class="not-prose my-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+  {stats.map((stat) => (
+    <div class="rounded-xl border border-gray-100 bg-white p-4 text-center shadow-sm">
+      <p class="text-3xl md:text-4xl font-bold text-primary">{stat.value}</p>
+      <p class="text-xs font-semibold uppercase tracking-wide text-gray-500 mt-1">{stat.label}</p>
+      {stat.source && (
+        <p class="text-[10px] text-gray-400 mt-1">{stat.source}</p>
+      )}
+    </div>
+  ))}
+</div>

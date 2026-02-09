@@ -1,0 +1,14 @@
+---
+export interface Props {
+  question?: string;
+}
+
+const { question = 'Short on time? Here\'s the quick answer:' } = Astro.props;
+---
+
+<div class="not-prose my-8 rounded-xl border-l-4 border-primary bg-green-50/70 p-5">
+  <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">{question}</p>
+  <div class="text-base text-gray-800 leading-relaxed [&>p]:mb-2 [&>p:last-child]:mb-0 [&_strong]:text-gray-900">
+    <slot />
+  </div>
+</div>

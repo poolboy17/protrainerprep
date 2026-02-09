@@ -61,6 +61,16 @@ const postCollection = defineCollection({
     tags: z.array(z.string()).optional(),
     author: z.string().optional(),
 
+    // Pro Trainer Prep custom fields
+    type: z.enum(['review', 'comparison', 'hub', 'data', 'career']).optional(),
+    verdict: z.string().optional(),
+    rating: z.number().optional(),
+    affiliateUrl: z.string().optional(),
+    affiliateLabel: z.string().optional(),
+    pros: z.array(z.string()).optional(),
+    cons: z.array(z.string()).optional(),
+    quickAnswer: z.string().optional(),
+
     metadata: metadataDefinition(),
   }),
 });
