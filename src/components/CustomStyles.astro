@@ -43,4 +43,18 @@ import '@fontsource-variable/inter';
       color: snow;
     }
   }
+
+  /* Disable intersection observer fade animations — content should be visible immediately */
+  @media (min-width: 768px) {
+    .motion-safe\:md\:opacity-0 {
+      opacity: 1 !important;
+    }
+    .motion-safe\:md\:intersect\:animate-fade {
+      animation: none !important;
+      opacity: 1 !important;
+    }
+    [no-intersect] {
+      opacity: 1 !important;
+    }
+  }
 </style>
