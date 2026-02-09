@@ -32,31 +32,6 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-
-    <style is:inline>
-      body{margin:0;font-family:'Inter Variable',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-      .bg-page{background-color:var(--aw-color-bg-page,#fff)}
-      .text-default{color:var(--aw-color-text-default,#1f2937)}
-      .text-muted{color:var(--aw-color-text-muted,rgba(31,41,55,0.66))}
-      .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-      .tracking-tight{letter-spacing:-0.025em}
-      [no-intersect]{opacity:0}
-      header{position:sticky;top:0;z-index:40}
-    </style>
-
-    <script is:inline>
-      /* Convert render-blocking stylesheets to non-blocking */
-      (function(){
-        var d=document,s=d.querySelectorAll('link[rel="stylesheet"][href*="/_astro/"]');
-        for(var i=0;i<s.length;i++){
-          s[i].media='print';
-          s[i].onload=function(){this.media='all'};
-        }
-      })();
-    </script>
-    <noscript>
-      <link rel="stylesheet" href="/_astro/privacy.Db5zq5IU.css">
-    </noscript>
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
