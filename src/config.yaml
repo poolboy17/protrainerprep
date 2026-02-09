@@ -15,7 +15,7 @@ metadata:
   openGraph:
     site_name: Pro Trainer Prep
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/og-image.png'
         width: 1200
         height: 628
     type: website
