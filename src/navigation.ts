@@ -4,19 +4,19 @@ export const headerData = {
   links: [
     {
       text: 'Become a Trainer',
-      href: getPermalink('/blog/how-to-become-personal-trainer'),
+      href: '/guides/how-to-become-personal-trainer',
     },
     {
       text: 'Certifications',
-      href: getPermalink('/blog/fitness-certification-guide'),
+      href: '/certifications/fitness-certification-guide',
     },
     {
       text: 'Career Change',
-      href: getPermalink('/blog/career-change-fitness-guide'),
+      href: '/career-change/career-change-fitness-guide',
     },
     {
       text: 'Career Building',
-      href: getPermalink('/blog/career-building-guide'),
+      href: '/career-building/career-building-guide',
     },
   ],
   actions: [],
@@ -27,26 +27,26 @@ export const footerData = {
     {
       title: 'Guides',
       links: [
-        { text: 'Become a Personal Trainer', href: getPermalink('/blog/how-to-become-personal-trainer') },
-        { text: 'Certification Guide', href: getPermalink('/blog/fitness-certification-guide') },
-        { text: 'Career Change Guide', href: getPermalink('/blog/career-change-fitness-guide') },
-        { text: 'Career Building Guide', href: getPermalink('/blog/career-building-guide') },
+        { text: 'Become a Personal Trainer', href: '/guides/how-to-become-personal-trainer' },
+        { text: 'Certification Guide', href: '/certifications/fitness-certification-guide' },
+        { text: 'Career Change Guide', href: '/career-change/career-change-fitness-guide' },
+        { text: 'Career Building Guide', href: '/career-building/career-building-guide' },
       ],
     },
     {
       title: 'Popular Comparisons',
       links: [
-        { text: 'NASM vs ACE vs ISSA', href: getPermalink('/blog/nasm-vs-ace-vs-issa') },
-        { text: 'NASM vs NCSF', href: getPermalink('/blog/nasm-vs-ncsf') },
-        { text: 'Cheapest Certifications', href: getPermalink('/blog/cheapest-personal-trainer-certifications') },
+        { text: 'NASM vs ACE vs ISSA', href: '/certifications/nasm-vs-ace-vs-issa' },
+        { text: 'NASM vs NCSF', href: '/certifications/nasm-vs-ncsf' },
+        { text: 'Cheapest Certifications', href: '/certifications/cheapest-personal-trainer-certifications' },
       ],
     },
     {
       title: 'Career Resources',
       links: [
-        { text: 'Personal Trainer Salary', href: getPermalink('/blog/personal-trainer-salary') },
-        { text: 'Get Your First 10 Clients', href: getPermalink('/blog/get-first-10-clients') },
-        { text: 'NCSF CPT Review', href: getPermalink('/blog/ncsf-cpt-review') },
+        { text: 'Personal Trainer Salary', href: '/career-building/personal-trainer-salary' },
+        { text: 'Get Your First 10 Clients', href: '/career-building/get-first-10-clients' },
+        { text: 'NCSF CPT Review', href: '/certifications/ncsf-cpt-review' },
       ],
     },
   ],

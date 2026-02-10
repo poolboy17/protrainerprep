@@ -7,3 +7,111 @@
   for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# ============================================================
+# Phase 2: 301 Redirects — /blog/* → semantic URLs
+# ============================================================
+
+# Pillar
+[[redirects]]
+  from = "/blog/how-to-become-personal-trainer"
+  to = "/guides/how-to-become-personal-trainer"
+  status = 301
+
+# Certifications cluster
+[[redirects]]
+  from = "/blog/fitness-certification-guide"
+  to = "/certifications/fitness-certification-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ncsf-cpt-review"
+  to = "/certifications/ncsf-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-cpt-review"
+  to = "/certifications/nasm-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ace-cpt-review"
+  to = "/certifications/ace-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-vs-ncsf"
+  to = "/certifications/nasm-vs-ncsf"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-vs-ace"
+  to = "/certifications/nasm-vs-ace"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-vs-ace-vs-issa"
+  to = "/certifications/nasm-vs-ace-vs-issa"
+  status = 301
+
+[[redirects]]
+  from = "/blog/cheapest-personal-trainer-certifications"
+  to = "/certifications/cheapest-personal-trainer-certifications"
+  status = 301
+
+[[redirects]]
+  from = "/blog/best-cert-career-changers"
+  to = "/certifications/best-cert-career-changers"
+  status = 301
+
+[[redirects]]
+  from = "/blog/best-certifications-second-career"
+  to = "/certifications/best-certifications-second-career"
+  status = 301
+
+# Career change cluster
+[[redirects]]
+  from = "/blog/career-change-fitness-guide"
+  to = "/career-change/career-change-fitness-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/is-it-too-late-to-become-personal-trainer"
+  to = "/career-change/is-it-too-late-to-become-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/fitness-careers-no-gym"
+  to = "/career-change/fitness-careers-no-gym"
+  status = 301
+
+[[redirects]]
+  from = "/blog/afford-fitness-certification"
+  to = "/career-change/afford-fitness-certification"
+  status = 301
+
+[[redirects]]
+  from = "/blog/corporate-to-certified-timeline"
+  to = "/career-change/corporate-to-certified-timeline"
+  status = 301
+
+[[redirects]]
+  from = "/blog/career-change-fitness-after-40"
+  to = "/career-change/career-change-fitness-after-40"
+  status = 301
+
+# Career building cluster
+[[redirects]]
+  from = "/blog/career-building-guide"
+  to = "/career-building/career-building-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-salary"
+  to = "/career-building/personal-trainer-salary"
+  status = 301
+
+[[redirects]]
+  from = "/blog/get-first-10-clients"
+  to = "/career-building/get-first-10-clients"
+  status = 301

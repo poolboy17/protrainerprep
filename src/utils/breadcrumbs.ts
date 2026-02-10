@@ -4,6 +4,7 @@
  *   Home → Pillar → Sub-Hub → Spoke
  *
  * This follows LOGICAL hierarchy, not URL paths.
+ * URLs use /%category%/%slug% pattern.
  */
 
 interface BreadcrumbItem {
@@ -13,13 +14,13 @@ interface BreadcrumbItem {
 
 const PILLAR = {
   label: 'How to Become a Personal Trainer',
-  href: '/blog/how-to-become-personal-trainer',
+  href: '/guides/how-to-become-personal-trainer',
 };
 
 const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = {
   certifications: {
     label: 'Certification Guide',
-    href: '/blog/fitness-certification-guide',
+    href: '/certifications/fitness-certification-guide',
     spokes: [
       'ncsf-cpt-review',
       'nasm-cpt-review',
@@ -34,7 +35,7 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
   },
   'career-change': {
     label: 'Career Change Guide',
-    href: '/blog/career-change-fitness-guide',
+    href: '/career-change/career-change-fitness-guide',
     spokes: [
       'is-it-too-late-to-become-personal-trainer',
       'fitness-careers-no-gym',
@@ -45,7 +46,7 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
   },
   'career-building': {
     label: 'Career Building Guide',
-    href: '/blog/career-building-guide',
+    href: '/career-building/career-building-guide',
     spokes: [
       'personal-trainer-salary',
       'get-first-10-clients',
@@ -53,9 +54,21 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
   },
 };
 
-const HUB_SLUGS = Object.values(HUBS).map(h =>
-  h.href.replace('/blog/', '')
-);
+// Map category to URL prefix
+const CATEGORY_PREFIX: Record<string, string> = {
+  guides: '/guides',
+  certifications: '/certifications',
+  'career-change': '/career-change',
+  'career-building': '/career-building',
+};
+
+// Reverse lookup: spoke slug → category
+const SPOKE_CATEGORY: Record<string, string> = {};
+for (const [category, hub] of Object.entries(HUBS)) {
+  for (const spoke of hub.spokes) {
+    SPOKE_CATEGORY[spoke] = category;
+  }
+}
 
 export function getBreadcrumbs(slug: string, title: string): BreadcrumbItem[] {
   const home: BreadcrumbItem = { label: 'Home', href: '/' };
@@ -66,25 +79,26 @@ export function getBreadcrumbs(slug: string, title: string): BreadcrumbItem[] {
   }
 
   // Is this a sub-hub page?
-  for (const [, hub] of Object.entries(HUBS)) {
-    const hubSlug = hub.href.replace('/blog/', '');
+  for (const [category, hub] of Object.entries(HUBS)) {
+    const hubSlug = hub.href.split('/').pop() || '';
     if (slug === hubSlug) {
       return [home, PILLAR, { label: title, href: hub.href }];
     }
   }
 
   // It's a spoke — find its parent hub
-  for (const [, hub] of Object.entries(HUBS)) {
+  for (const [category, hub] of Object.entries(HUBS)) {
     if (hub.spokes.includes(slug)) {
+      const prefix = CATEGORY_PREFIX[category] || '';
       return [
         home,
         PILLAR,
         { label: hub.label, href: hub.href },
-        { label: title, href: `/blog/${slug}` },
+        { label: title, href: `${prefix}/${slug}` },
       ];
     }
   }
 
   // Fallback: just Home → title
-  return [home, { label: title, href: `/blog/${slug}` }];
+  return [home, { label: title, href: `/${slug}` }];
 }
