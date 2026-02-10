@@ -31,6 +31,10 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'cheapest-personal-trainer-certifications',
       'best-cert-career-changers',
       'best-certifications-second-career',
+      'issa-cpt-review',
+      'nsca-cscs-review',
+      'ncsf-vs-ace',
+      'how-hard-is-personal-trainer-exam',
     ],
   },
   'career-change': {
@@ -42,6 +46,10 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'afford-fitness-certification',
       'corporate-to-certified-timeline',
       'career-change-fitness-after-40',
+      'military-to-personal-trainer',
+      'teacher-to-personal-trainer',
+      'nurse-to-personal-trainer',
+      'personal-trainer-without-degree',
     ],
   },
   'career-building': {
@@ -56,6 +64,8 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'personal-trainer-marketing',
       'part-time-personal-trainer',
       'is-personal-training-good-career',
+      'personal-trainer-100k',
+      'personal-trainer-insurance',
     ],
   },
 };

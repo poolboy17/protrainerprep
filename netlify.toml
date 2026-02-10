@@ -145,3 +145,53 @@
   from = "/blog/is-personal-training-good-career"
   to = "/career-building/is-personal-training-good-career"
   status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-100k"
+  to = "/career-building/personal-trainer-100k"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-insurance"
+  to = "/career-building/personal-trainer-insurance"
+  status = 301
+
+[[redirects]]
+  from = "/blog/issa-cpt-review"
+  to = "/certifications/issa-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nsca-cscs-review"
+  to = "/certifications/nsca-cscs-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ncsf-vs-ace"
+  to = "/certifications/ncsf-vs-ace"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-hard-is-personal-trainer-exam"
+  to = "/certifications/how-hard-is-personal-trainer-exam"
+  status = 301
+
+[[redirects]]
+  from = "/blog/military-to-personal-trainer"
+  to = "/career-change/military-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/teacher-to-personal-trainer"
+  to = "/career-change/teacher-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nurse-to-personal-trainer"
+  to = "/career-change/nurse-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-without-degree"
+  to = "/career-change/personal-trainer-without-degree"
+  status = 301
