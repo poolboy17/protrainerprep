@@ -39,11 +39,6 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'ace-vs-issa',
       'nasm-vs-nsca',
       'personal-trainer-certification-renewal',
-      'personal-trainer-study-guide',
-      'acsm-cpt-review',
-      'nsca-cpt-review',
-      'issa-vs-nasm',
-      'ace-vs-ncsf-vs-nasm',
     ],
   },
   'career-change': {
@@ -62,11 +57,6 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'career-change-fitness-after-50',
       'firefighter-to-personal-trainer',
       'stay-at-home-parent-to-personal-trainer',
-      'accountant-to-personal-trainer',
-      'engineer-to-personal-trainer',
-      'police-officer-to-personal-trainer',
-      'physical-therapist-to-personal-trainer',
-      'career-change-fitness-after-60',
     ],
   },
   'career-building': {
