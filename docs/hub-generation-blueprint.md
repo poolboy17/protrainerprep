@@ -266,7 +266,7 @@ Hubs require a specific content architecture:
 
 | Metric | Hub Minimum | Hub Target |
 |--------|-------------|------------|
-| Total word count | 1,500 | 2,000+ |
+| Total word count | 1,500–3,000 (hub) / 2,000–4,000 (pillar) | 2,000+ recommended |
 | H2 sections | 6+ | 8+ |
 | Data points (numbers, $, %) | 15+ | 25+ |
 | Internal links (total) | 10+ | All spokes + 2-3 cross-hub |
@@ -306,7 +306,7 @@ For each spoke link in the hub:
 
 | Check | Severity | Criteria |
 |-------|----------|----------|
-| Word count ≥1,500 | [BLOCK] | Hub minimum content depth |
+| Word count 1,500–3,000 (hub) or 2,000–4,000 (pillar) | [BLOCK] | Content depth gate |
 | Primary keyword in first 50 words | [BLOCK] | SEO requirement |
 | Every spoke linked at least once | [BLOCK] | 100% spoke coverage |
 | ≥1 table present | [BLOCK] | Data presentation |
@@ -517,8 +517,8 @@ Within 48 hours of deployment:
 
 | Dimension | Spoke | Hub |
 |-----------|-------|-----|
-| Minimum word count | 800 | 1,500 |
-| Target word count | 1,200+ | 2,000+ |
+| Word count range | 700–2,500 | 1,500–3,000 |
+| Pillar word count range | N/A | 2,000–4,000 |
 | Internal links minimum | 3 | 10+ (all spokes) |
 | Spoke coverage required | Link to hub + 2 siblings | Link to ALL spokes |
 | Backlink requirement | Link back to hub | All spokes link back |
