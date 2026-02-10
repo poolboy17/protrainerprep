@@ -35,6 +35,10 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'nsca-cscs-review',
       'ncsf-vs-ace',
       'how-hard-is-personal-trainer-exam',
+      'ncsf-vs-issa',
+      'ace-vs-issa',
+      'nasm-vs-nsca',
+      'personal-trainer-certification-renewal',
     ],
   },
   'career-change': {
@@ -50,6 +54,9 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'teacher-to-personal-trainer',
       'nurse-to-personal-trainer',
       'personal-trainer-without-degree',
+      'career-change-fitness-after-50',
+      'firefighter-to-personal-trainer',
+      'stay-at-home-parent-to-personal-trainer',
     ],
   },
   'career-building': {
@@ -66,6 +73,9 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'is-personal-training-good-career',
       'personal-trainer-100k',
       'personal-trainer-insurance',
+      'personal-trainer-client-retention',
+      'gym-vs-independent-personal-trainer',
+      'personal-trainer-continuing-education',
     ],
   },
 };

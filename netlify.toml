@@ -195,3 +195,53 @@
   from = "/blog/personal-trainer-without-degree"
   to = "/career-change/personal-trainer-without-degree"
   status = 301
+
+[[redirects]]
+  from = "/blog/ncsf-vs-issa"
+  to = "/certifications/ncsf-vs-issa"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ace-vs-issa"
+  to = "/certifications/ace-vs-issa"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-vs-nsca"
+  to = "/certifications/nasm-vs-nsca"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-certification-renewal"
+  to = "/certifications/personal-trainer-certification-renewal"
+  status = 301
+
+[[redirects]]
+  from = "/blog/career-change-fitness-after-50"
+  to = "/career-change/career-change-fitness-after-50"
+  status = 301
+
+[[redirects]]
+  from = "/blog/firefighter-to-personal-trainer"
+  to = "/career-change/firefighter-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/stay-at-home-parent-to-personal-trainer"
+  to = "/career-change/stay-at-home-parent-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-client-retention"
+  to = "/career-building/personal-trainer-client-retention"
+  status = 301
+
+[[redirects]]
+  from = "/blog/gym-vs-independent-personal-trainer"
+  to = "/career-building/gym-vs-independent-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-continuing-education"
+  to = "/career-building/personal-trainer-continuing-education"
+  status = 301
