@@ -53,6 +53,9 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
       'personal-training-pricing',
       'online-vs-in-person-personal-training',
       'personal-trainer-niche-specialization',
+      'personal-trainer-marketing',
+      'part-time-personal-trainer',
+      'is-personal-training-good-career',
     ],
   },
 };

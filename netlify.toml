@@ -130,3 +130,18 @@
   from = "/blog/personal-trainer-niche-specialization"
   to = "/career-building/personal-trainer-niche-specialization"
   status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-marketing"
+  to = "/career-building/personal-trainer-marketing"
+  status = 301
+
+[[redirects]]
+  from = "/blog/part-time-personal-trainer"
+  to = "/career-building/part-time-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/is-personal-training-good-career"
+  to = "/career-building/is-personal-training-good-career"
+  status = 301
