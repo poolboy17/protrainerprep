@@ -115,3 +115,18 @@
   from = "/blog/get-first-10-clients"
   to = "/career-building/get-first-10-clients"
   status = 301
+
+[[redirects]]
+  from = "/blog/personal-training-pricing"
+  to = "/career-building/personal-training-pricing"
+  status = 301
+
+[[redirects]]
+  from = "/blog/online-vs-in-person-personal-training"
+  to = "/career-building/online-vs-in-person-personal-training"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-niche-specialization"
+  to = "/career-building/personal-trainer-niche-specialization"
+  status = 301

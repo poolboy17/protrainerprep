@@ -50,6 +50,9 @@ const HUBS: Record<string, { label: string; href: string; spokes: string[] }> = 
     spokes: [
       'personal-trainer-salary',
       'get-first-10-clients',
+      'personal-training-pricing',
+      'online-vs-in-person-personal-training',
+      'personal-trainer-niche-specialization',
     ],
   },
 };
