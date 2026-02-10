@@ -245,3 +245,53 @@
   from = "/blog/personal-trainer-continuing-education"
   to = "/career-building/personal-trainer-continuing-education"
   status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-study-guide"
+  to = "/certifications/personal-trainer-study-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/acsm-cpt-review"
+  to = "/certifications/acsm-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nsca-cpt-review"
+  to = "/certifications/nsca-cpt-review"
+  status = 301
+
+[[redirects]]
+  from = "/blog/issa-vs-nasm"
+  to = "/certifications/issa-vs-nasm"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ace-vs-ncsf-vs-nasm"
+  to = "/certifications/ace-vs-ncsf-vs-nasm"
+  status = 301
+
+[[redirects]]
+  from = "/blog/accountant-to-personal-trainer"
+  to = "/career-change/accountant-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/engineer-to-personal-trainer"
+  to = "/career-change/engineer-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/police-officer-to-personal-trainer"
+  to = "/career-change/police-officer-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/physical-therapist-to-personal-trainer"
+  to = "/career-change/physical-therapist-to-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/career-change-fitness-after-60"
+  to = "/career-change/career-change-fitness-after-60"
+  status = 301
