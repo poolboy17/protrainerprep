@@ -33,8 +33,8 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
   url={String(url)}
 />
 
-<!-- Hero header with dark slate background -->
-<div class="bg-gray-900 dark:bg-gray-950 pt-8 sm:pt-12 pb-8">
+<!-- Hero header — dark navy -->
+<div class="bg-[#0f172a] pt-8 sm:pt-12 pb-8 border-b-[3px] border-[#16a34a]">
   <div class="max-w-3xl mx-auto px-4 sm:px-6">
     <Breadcrumbs items={breadcrumbItems} />
 
@@ -90,7 +90,7 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
 
 <section class="mx-auto">
   <article>
-    <!-- Hero image: overlaps the dark header slightly -->
+    <!-- Hero image -->
     {
       post.image ? (
         <div class="-mt-2">
@@ -113,9 +113,9 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
       )
     }
 
-    <!-- Article body -->
+    <!-- Article body — links are indigo, not green -->
     <div
-      class="article-body mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      class="article-body mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
     >
       <slot />
     </div>
@@ -127,57 +127,75 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
 </section>
 
 <style is:global>
-  /* Alternating H2 section backgrounds — visible contrast */
-  .article-body > h2:nth-of-type(even) {
-    background: #f0fdf4;
+  /* LINKS — indigo, not green */
+  .article-body a {
+    color: #4f46e5 !important;
+    text-decoration-color: #c7d2fe;
+  }
+  .article-body a:hover {
+    color: #4338ca !important;
+    text-decoration-color: #4338ca;
+  }
+
+  /* H2 BANDS — alternating indigo / slate / dark+indigo */
+  .article-body > h2:nth-of-type(3n+1) {
+    background: #eef2ff;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding: 0.875rem 1.5rem 0.625rem;
-    border-radius: 0.5rem;
-    border-left: 4px solid #16a34a;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 4px solid #4f46e5;
+    color: #312e81;
   }
 
-  .article-body > h2:nth-of-type(odd) {
-    background: #f8fafc;
+  .article-body > h2:nth-of-type(3n+2) {
+    background: #f1f5f9;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding: 0.875rem 1.5rem 0.625rem;
-    border-radius: 0.5rem;
-    border-left: 4px solid #334155;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 4px solid #475569;
+    color: #1e293b;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .article-body > h2:nth-of-type(even) {
-      background: rgba(22, 163, 74, 0.1);
-      border-left-color: #22c55e;
-    }
-    .article-body > h2:nth-of-type(odd) {
-      background: rgba(51, 65, 85, 0.3);
-      border-left-color: #64748b;
-    }
-  }
-
-  /* Inline images: generous spacing */
-  .article-body > p > img {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  /* Full-width color band behind every 3rd H2 section */
-  .article-body > h2:nth-of-type(3n) {
-    background: #1e293b;
-    color: #f1f5f9 !important;
+  .article-body > h2:nth-of-type(3n+3) {
+    background: #0f172a;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     padding: 1rem 1.5rem 0.75rem;
     border-radius: 0.5rem;
-    border-left: 4px solid #22c55e;
+    border-left: 4px solid #6366f1;
+    color: #e0e7ff !important;
   }
 
+  /* Dark mode adjustments */
   @media (prefers-color-scheme: dark) {
-    .article-body > h2:nth-of-type(3n) {
-      background: rgba(15, 23, 42, 0.8);
-      color: #e2e8f0 !important;
+    .article-body > h2:nth-of-type(3n+1) {
+      background: rgba(79, 70, 229, 0.1);
+      border-left-color: #818cf8;
+      color: #c7d2fe;
     }
+    .article-body > h2:nth-of-type(3n+2) {
+      background: rgba(51, 65, 85, 0.3);
+      border-left-color: #64748b;
+      color: #e2e8f0;
+    }
+    .article-body > h2:nth-of-type(3n+3) {
+      background: rgba(15, 23, 42, 0.8);
+      border-left-color: #818cf8;
+      color: #e0e7ff;
+    }
+    .article-body a {
+      color: #818cf8 !important;
+    }
+    .article-body a:hover {
+      color: #a5b4fc !important;
+    }
+  }
+
+  /* Inline images spacing */
+  .article-body > p > img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 </style>
