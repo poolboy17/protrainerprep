@@ -50,7 +50,6 @@
   status = 301
 
 [[redirects]]
-[[redirects]]
   from = "/blog/cheapest-personal-trainer-certifications"
   to = "/certifications/cheapest-personal-trainer-certifications"
   status = 301
@@ -60,7 +59,6 @@
   to = "/certifications/best-cert-career-changers"
   status = 301
 
-[[redirects]]
 # Career change cluster
 [[redirects]]
   from = "/blog/career-change-fitness-guide"
@@ -144,13 +142,10 @@
   status = 301
 
 [[redirects]]
-[[redirects]]
   from = "/blog/issa-cpt-review"
   to = "/certifications/issa-cpt-review"
   status = 301
 
-[[redirects]]
-[[redirects]]
 [[redirects]]
   from = "/blog/how-hard-is-personal-trainer-exam"
   to = "/certifications/how-hard-is-personal-trainer-exam"
@@ -177,9 +172,6 @@
   status = 301
 
 [[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
   from = "/blog/personal-trainer-certification-renewal"
   to = "/certifications/personal-trainer-certification-renewal"
   status = 301
@@ -190,21 +182,6 @@
   status = 301
 
 [[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
   from = "/blog/gym-vs-independent-personal-trainer"
   to = "/career-building/gym-vs-independent-personal-trainer"
   status = 301
-
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
-[[redirects]]
