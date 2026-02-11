@@ -10,56 +10,160 @@ export interface Props {
 const { text, url, class: className = 'inline-block' } = Astro.props;
 ---
 
-<div class={className}>
-  <span class="align-super font-bold text-slate-500 dark:text-slate-400">Share:</span>
+<!-- Inline share bar (visible at bottom of article) -->
+<div class={`${className} share-bar`}>
+  <div class="flex items-center flex-wrap gap-3">
+    <span class="font-bold text-sm text-gray-700 dark:text-slate-300 mr-1">Share this article:</span>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-black text-white hover:bg-gray-800 transition-colors cursor-pointer"
+      title="Share on X (Twitter)"
+      data-aw-social-share="twitter"
+      data-aw-url={url}
+      data-aw-text={text}
+    >
+      <Icon name="tabler:brand-x" class="w-4 h-4" />
+      Post
+    </a>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#0077b5] text-white hover:bg-[#006097] transition-colors cursor-pointer"
+      title="Share on LinkedIn"
+      data-aw-social-share="linkedin"
+      data-aw-url={url}
+      data-aw-text={text}
+    >
+      <Icon name="tabler:brand-linkedin" class="w-4 h-4" />
+      LinkedIn
+    </a>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#1877f2] text-white hover:bg-[#1565c0] transition-colors cursor-pointer"
+      title="Share on Facebook"
+      data-aw-social-share="facebook"
+      data-aw-url={url}
+    >
+      <Icon name="tabler:brand-facebook" class="w-4 h-4" />
+      Share
+    </a>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#25D366] text-white hover:bg-[#1da851] transition-colors cursor-pointer"
+      title="Share on WhatsApp"
+      data-aw-social-share="whatsapp"
+      data-aw-url={url}
+      data-aw-text={text}
+    >
+      <Icon name="tabler:brand-whatsapp" class="w-4 h-4" />
+      WhatsApp
+    </a>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-[#ff4500] text-white hover:bg-[#cc3700] transition-colors cursor-pointer"
+      title="Share on Reddit"
+      data-aw-social-share="reddit"
+      data-aw-url={url}
+      data-aw-text={text}
+    >
+      <Icon name="tabler:brand-reddit" class="w-4 h-4" />
+      Reddit
+    </a>
+    <a
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-gray-600 text-white hover:bg-gray-700 transition-colors cursor-pointer"
+      title="Share via Email"
+      data-aw-social-share="mail"
+      data-aw-url={url}
+      data-aw-text={text}
+    >
+      <Icon name="tabler:mail" class="w-4 h-4" />
+      Email
+    </a>
+    <button
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-slate-700 dark:text-slate-300 dark:hover:bg-slate-600 transition-colors cursor-pointer"
+      title="Copy link"
+      data-aw-copy-link
+      data-aw-url={url}
+    >
+      <Icon name="tabler:link" class="w-4 h-4" />
+      Copy link
+    </button>
+  </div>
+</div>
+
+<!-- Floating share button (mobile) -->
+<div class="fixed bottom-6 right-6 z-50 md:hidden share-fab" id="share-fab">
   <button
-    class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="Twitter Share"
-    data-aw-social-share="twitter"
-    data-aw-url={url}
-    data-aw-text={text}
-    ><Icon
-      name="tabler:brand-x"
-      class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300"
-    />
-  </button>
-  <button class="ml-2 rtl:ml-0 rtl:mr-2" title="Facebook Share" data-aw-social-share="facebook" data-aw-url={url}
-    ><Icon
-      name="tabler:brand-facebook"
-      class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300"
-    />
-  </button>
-  <button
-    class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="Linkedin Share"
-    data-aw-social-share="linkedin"
-    data-aw-url={url}
-    data-aw-text={text}
-    ><Icon
-      name="tabler:brand-linkedin"
-      class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300"
-    />
-  </button>
-  <button
-    class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="Whatsapp Share"
-    data-aw-social-share="whatsapp"
-    data-aw-url={url}
-    data-aw-text={text}
-    ><Icon
-      name="tabler:brand-whatsapp"
-      class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300"
-    />
-  </button>
-  <button
-    class="ml-2 rtl:ml-0 rtl:mr-2"
-    title="Email Share"
-    data-aw-social-share="mail"
-    data-aw-url={url}
-    data-aw-text={text}
-    ><Icon
-      name="tabler:mail"
-      class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300"
-    />
+    class="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:bg-secondary transition-all"
+    title="Share this article"
+    id="share-fab-btn"
+  >
+    <Icon name="tabler:share" class="w-5 h-5" />
   </button>
 </div>
+
+<script>
+  // Copy link functionality
+  document.querySelectorAll('[data-aw-copy-link]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const url = btn.getAttribute('data-aw-url');
+      try {
+        await navigator.clipboard.writeText(url);
+        const icon = btn.querySelector('svg');
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg> Copied!';
+        btn.classList.add('bg-green-100', 'text-green-700');
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.classList.remove('bg-green-100', 'text-green-700');
+        }, 2000);
+      } catch (e) {
+        // Fallback
+        const textarea = document.createElement('textarea');
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+    });
+  });
+
+  // Reddit share handler (add to existing social share system)
+  document.querySelectorAll('[data-aw-social-share="reddit"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const url = encodeURIComponent(btn.getAttribute('data-aw-url'));
+      const text = encodeURIComponent(btn.getAttribute('data-aw-text'));
+      window.open(`https://www.reddit.com/submit?url=${url}&title=${text}`, '_blank');
+    });
+  });
+
+  // Mobile FAB - use native share API if available, otherwise scroll to share bar
+  const fabBtn = document.getElementById('share-fab-btn');
+  if (fabBtn) {
+    fabBtn.addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: document.title,
+            url: window.location.href
+          });
+        } catch (e) {
+          // User cancelled or error
+        }
+      } else {
+        // Scroll to share bar
+        document.querySelector('.share-bar')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+
+    // Hide FAB when share bar is visible
+    const shareBar = document.querySelector('.share-bar');
+    if (shareBar) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const fab = document.getElementById('share-fab');
+          if (fab) {
+            fab.style.opacity = entry.isIntersecting ? '0' : '1';
+            fab.style.pointerEvents = entry.isIntersecting ? 'none' : 'auto';
+          }
+        });
+      });
+      observer.observe(shareBar);
+    }
+  }
+</script>
