@@ -5,6 +5,9 @@ export interface Props {
   affiliateUrl: string;
   affiliateLabel?: string;
   variant?: 'primary' | 'subtle';
+  bullets?: string[];
+  secondaryUrl?: string;
+  secondaryLabel?: string;
 }
 
 const {
@@ -13,45 +16,93 @@ const {
   affiliateUrl,
   affiliateLabel = 'Check Current Price',
   variant = 'primary',
+  bullets = [],
+  secondaryUrl,
+  secondaryLabel,
 } = Astro.props;
 
 const isPrimary = variant === 'primary';
+const hasBullets = bullets && bullets.length > 0;
+const hasSecondary = secondaryUrl && secondaryLabel;
 ---
 
 <div class:list={[
-  'not-prose my-8 rounded-xl p-6 text-center',
+  'not-prose my-8 rounded-xl p-6',
+  hasBullets ? 'text-left' : 'text-center',
   isPrimary
     ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
     : 'border-2 border-dashed border-primary/30 bg-green-50/50'
 ]}>
   <p class:list={[
-    'text-lg font-bold mb-1',
+    'text-lg font-bold mb-1 leading-tight',
     isPrimary ? 'text-white' : 'text-gray-900'
   ]}>{title}</p>
+
   {description && (
     <p class:list={[
-      'text-sm mb-4',
-      isPrimary ? 'text-white/80' : 'text-gray-500'
+      'text-sm mb-3 leading-relaxed',
+      isPrimary ? 'text-white/85' : 'text-gray-500'
     ]}>{description}</p>
   )}
-  <a
-    href={affiliateUrl}
-    target="_blank"
-    rel="noopener sponsored"
-    class:list={[
-      'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition',
-      isPrimary
-        ? 'bg-white text-primary hover:bg-gray-100'
-        : 'bg-primary text-white hover:bg-secondary'
-    ]}
-  >
-    {affiliateLabel}
-    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-    </svg>
-  </a>
+
+  {hasBullets && (
+    <ul class:list={[
+      'list-none pl-0 mb-4 space-y-1.5',
+    ]}>
+      {bullets.map((bullet) => (
+        <li class:list={[
+          'flex items-start gap-2 text-sm leading-snug',
+          isPrimary ? 'text-white/90' : 'text-gray-600'
+        ]}>
+          <span class:list={[
+            'font-bold flex-shrink-0 mt-px',
+            isPrimary ? 'text-green-200' : 'text-primary'
+          ]}>&#10003;</span>
+          <span>{bullet}</span>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <div class:list={[
+    'flex flex-col gap-2',
+    hasBullets ? 'items-start' : 'items-center'
+  ]}>
+    <a
+      href={affiliateUrl}
+      target="_blank"
+      rel="noopener sponsored"
+      class:list={[
+        'inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition',
+        isPrimary
+          ? 'bg-white text-primary hover:bg-gray-100'
+          : 'bg-primary text-white hover:bg-secondary'
+      ]}
+    >
+      {affiliateLabel}
+      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </a>
+
+    {hasSecondary && (
+      <a
+        href={secondaryUrl}
+        class:list={[
+          'text-sm underline underline-offset-2 transition',
+          isPrimary
+            ? 'text-white/70 decoration-white/30 hover:text-white hover:decoration-white'
+            : 'text-primary decoration-primary/30 hover:decoration-primary'
+        ]}
+      >
+        {secondaryLabel}
+      </a>
+    )}
+  </div>
+
   <p class:list={[
     'text-[10px] mt-3',
-    isPrimary ? 'text-white/60' : 'text-gray-400'
+    isPrimary ? 'text-white/60' : 'text-gray-400',
+    hasBullets ? '' : ''
   ]}>Affiliate link — we may earn a commission at no extra cost to you.</p>
 </div>
