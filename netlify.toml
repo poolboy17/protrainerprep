@@ -8,6 +8,13 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+
+# Sitemap redirect — Google checks /sitemap.xml by default
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 301
+
 # ============================================================
 # Phase 2: 301 Redirects — /blog/* → semantic URLs
 # ============================================================
