@@ -28,7 +28,15 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => {
+        // Exclude tag pages, category pages, blog pagination, privacy, terms
+        if (page.includes('/tag/')) return false;
+        if (page.includes('/category/')) return false;
+        if (/\/blog\/\d+/.test(page)) return false;
+        return true;
+      },
+    }),
     mdx(),
     icon({
       include: {
