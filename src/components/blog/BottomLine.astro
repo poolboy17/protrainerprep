@@ -1,17 +1,23 @@
 ---
 export interface Props {
   title?: string;
+  text?: string;
   affiliateUrl?: string;
   affiliateLabel?: string;
 }
 
-const { title = 'The Bottom Line', affiliateUrl, affiliateLabel = 'Get Started Today' } = Astro.props;
+const { title = 'The Bottom Line', text, affiliateUrl, affiliateLabel = 'Get Started Today' } = Astro.props;
+
+// Clean text: strip leading markdown heading if present (e.g. "## Bottom-line recommendation\n...")
+const cleanText = text
+  ? text.replace(/^##?\s+[^\n]*\n*/m, '').trim()
+  : '';
 ---
 
 <div class="not-prose my-8 rounded-xl bg-gray-900 p-6 text-white shadow-lg">
   <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">{title}</p>
   <div class="text-base leading-relaxed text-gray-300 [&>p]:mb-3">
-    <slot />
+    {cleanText ? <p>{cleanText}</p> : <slot />}
   </div>
   {affiliateUrl && (
     <div class="mt-4">
