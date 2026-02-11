@@ -33,61 +33,64 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
   url={String(url)}
 />
 
-<section class="py-8 sm:py-16 lg:py-20 mx-auto">
-  <article>
-    <header class="max-w-3xl mx-auto px-4 sm:px-6">
-      <!-- Breadcrumbs: small, muted, tucked up top -->
-      <Breadcrumbs items={breadcrumbItems} />
+<!-- Hero header block with subtle green-tinted background -->
+<div class="bg-gradient-to-b from-green-50/60 via-green-50/30 to-transparent dark:from-slate-800/60 dark:via-slate-800/30 dark:to-transparent pt-8 sm:pt-12 pb-4">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <Breadcrumbs items={breadcrumbItems} />
 
-      <!-- Title first — the most important element -->
-      <h1
-        class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading mt-2"
-      >
-        {post.title}
-      </h1>
+    <h1 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading mt-2">
+      {post.title}
+    </h1>
 
-      <!-- Excerpt / subtitle -->
-      <p class="mt-4 mb-5 text-xl md:text-2xl text-muted dark:text-slate-400">
-        {post.excerpt}
-      </p>
+    <p class="mt-4 mb-5 text-lg md:text-xl text-gray-600 dark:text-slate-400 leading-relaxed">
+      {post.excerpt}
+    </p>
 
-      <!-- Meta bar: styled as a distinct row with subtle background -->
-      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gray-500 dark:text-gray-400 border-y border-gray-200 dark:border-slate-700 py-2.5 mb-8">
-        <span class="flex items-center gap-1">
-          <Icon name="tabler:calendar" class="w-4 h-4" />
-          <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
-        </span>
-        {
-          post.author && (
-            <span class="flex items-center gap-1">
-              <Icon name="tabler:user" class="w-4 h-4" />
-              <span>{post.author}</span>
-            </span>
-          )
-        }
-        {
-          post.category && (
+    <!-- Meta bar -->
+    <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm text-gray-500 dark:text-gray-400 bg-white/70 dark:bg-slate-800/70 border border-gray-200/80 dark:border-slate-700 rounded-lg px-4 py-2.5 mb-6 backdrop-blur-sm">
+      <span class="flex items-center gap-1.5">
+        <Icon name="tabler:calendar" class="w-4 h-4 text-gray-400" />
+        <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
+      </span>
+      {
+        post.author && (
+          <span class="flex items-center gap-1.5">
+            <span class="text-gray-300 dark:text-gray-600">·</span>
+            <Icon name="tabler:user" class="w-4 h-4 text-gray-400" />
+            <span>{post.author}</span>
+          </span>
+        )
+      }
+      {
+        post.category && (
+          <span class="flex items-center gap-1.5">
+            <span class="text-gray-300 dark:text-gray-600">·</span>
             <a
               href={getPermalink(post.category.slug, 'category')}
               class="flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:underline font-medium"
             >
-              <Icon name="tabler:tag" class="w-4 h-4" />
+              <Icon name="tabler:tag" class="w-3.5 h-3.5" />
               {post.category.title}
             </a>
-          )
-        }
-        {
-          post.readingTime && (
-            <span class="flex items-center gap-1">
-              <Icon name="tabler:clock" class="w-4 h-4" />
-              <span>{post.readingTime} min read</span>
-            </span>
-          )
-        }
-      </div>
-    </header>
+          </span>
+        )
+      }
+      {
+        post.readingTime && (
+          <span class="flex items-center gap-1.5">
+            <span class="text-gray-300 dark:text-gray-600">·</span>
+            <Icon name="tabler:clock" class="w-4 h-4 text-gray-400" />
+            <span>{post.readingTime} min read</span>
+          </span>
+        )
+      }
+    </div>
+  </div>
+</div>
 
-    <!-- Hero image: full-bleed outside the max-w-3xl container -->
+<section class="mx-auto">
+  <article>
+    <!-- Hero image -->
     {
       post.image ? (
         <Image
@@ -108,9 +111,9 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
       )
     }
 
-    <!-- Article body -->
+    <!-- Article body with alternating section backgrounds via CSS -->
     <div
-      class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      class="article-body mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
     >
       <slot />
     </div>
@@ -120,3 +123,47 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
     </div>
   </article>
 </section>
+
+<style is:global>
+  /* Alternating subtle background bands on H2 sections */
+  .article-body > h2:nth-of-type(even) {
+    background: linear-gradient(135deg, rgba(240, 253, 244, 0.5), rgba(236, 253, 245, 0.3));
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0.75rem 1.5rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .article-body > h2:nth-of-type(even) {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.3));
+    }
+  }
+
+  /* Subtle left accent bar on every other H2 */
+  .article-body > h2:nth-of-type(odd) {
+    border-left: 3px solid rgba(22, 163, 74, 0.3);
+    padding-left: 0.75rem;
+    margin-left: -0.75rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .article-body > h2:nth-of-type(odd) {
+      border-left: 3px solid rgba(34, 197, 94, 0.3);
+    }
+  }
+
+  /* Inline images: add subtle frame and spacing */
+  .article-body > p > img,
+  .article-body > p:has(> img) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Zebra-stripe subtle backgrounds on longer content sections */
+  .article-body > h2:nth-of-type(4n+3) ~ p:not(h2 ~ h2 ~ p),
+  .article-body > h2:nth-of-type(4n+3) ~ ul:not(h2 ~ h2 ~ ul),
+  .article-body > h2:nth-of-type(4n+3) ~ ol:not(h2 ~ h2 ~ ol) {
+    /* These selectors are tricky in CSS, handled by H2 styling instead */
+  }
+</style>
