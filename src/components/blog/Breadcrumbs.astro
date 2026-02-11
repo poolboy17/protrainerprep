@@ -1,12 +1,4 @@
 ---
-/**
- * Breadcrumbs component with JSON-LD structured data.
- * Renders breadcrumb navigation + BreadcrumbList schema.
- * 
- * The hierarchy follows logical structure (not URL paths):
- *   Home → Pillar → Sub-Hub → Spoke
- */
-
 export interface BreadcrumbItem {
   label: string;
   href: string;
@@ -18,7 +10,6 @@ export interface Props {
 
 const { items } = Astro.props;
 
-// Build JSON-LD BreadcrumbList
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -32,16 +23,16 @@ const jsonLd = {
 ---
 
 <nav aria-label="Breadcrumb" class="mb-3">
-  <ol class="flex flex-wrap items-center gap-1 text-xs text-gray-400 dark:text-gray-500">
+  <ol class="flex flex-wrap items-center gap-1 text-xs text-gray-400">
     {items.map((item, index) => (
       <li class="flex items-center">
-        {index > 0 && <span class="mx-1 text-gray-300 dark:text-gray-600">/</span>}
+        {index > 0 && <span class="mx-1 text-gray-600">/</span>}
         {index < items.length - 1 ? (
-          <a href={item.href} class="hover:text-primary-600 hover:underline transition-colors">
+          <a href={item.href} class="hover:text-green-400 hover:underline transition-colors">
             {item.label}
           </a>
         ) : (
-          <span class="text-gray-500 dark:text-gray-400">{item.label}</span>
+          <span class="text-gray-300">{item.label}</span>
         )}
       </li>
     ))}
