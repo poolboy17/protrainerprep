@@ -1,42 +1,121 @@
 ---
-export interface BreadcrumbItem {
+// Breadcrumbs.astro — renders SEO pyramid breadcrumbs + JSON-LD
+// Reads seoTier, seoHub, seoParent from the current post
+// Walks up the pyramid: spoke → hub → pillar → home
+
+interface Props {
+  post: {
+    slug: string;
+    title: string;
+    seoTier?: string;
+    seoHub?: string;
+    seoParent?: string;
+  };
+  allPosts: any[];
+}
+
+const { post, allPosts } = Astro.props;
+
+// Build a slug→post lookup
+const postMap: Record<string, any> = {};
+for (const p of allPosts) {
+  const slug = p.slug || p.id?.split("/").pop();
+  if (slug) postMap[slug] = p;
+}
+
+// Category → URL prefix mapping
+const categoryPrefixes: Record<string, string> = {
+  "career-change": "/career-change",
+  "certifications": "/certifications",
+  "career-building": "/career-building",
+  "guides": "/guides",
+  "ceu": "/ceu",
+};
+
+function getPostUrl(slug: string): string {
+  const p = postMap[slug];
+  if (!p) return `/${slug}`;
+  const cat = p.data?.category || p.category || "";
+  const prefix = categoryPrefixes[cat] || `/${cat}`;
+  return `${prefix}/${slug}`;
+}
+
+function getPostTitle(slug: string): string {
+  const p = postMap[slug];
+  if (!p) return slug;
+  const title = p.data?.title || p.title || slug;
+  // Shorten for breadcrumb display
+  return title.length > 40 ? title.substring(0, 37) + "..." : title;
+}
+
+// Tier badge colors
+const tierColors: Record<string, { bg: string; text: string; label: string }> = {
+  pillar: { bg: "bg-purple-100 dark:bg-purple-900/30", text: "text-purple-700 dark:text-purple-300", label: "Pillar" },
+  hub: { bg: "bg-green-100 dark:bg-green-900/30", text: "text-green-700 dark:text-green-300", label: "Hub" },
+  "sub-hub": { bg: "bg-teal-100 dark:bg-teal-900/30", text: "text-teal-700 dark:text-teal-300", label: "Sub-Hub" },
+  spoke: { bg: "bg-slate-100 dark:bg-slate-800", text: "text-slate-600 dark:text-slate-400", label: "Spoke" },
+};
+
+// Build crumb chain: walk up from current post → parent → parent → home
+interface Crumb {
   label: string;
-  href: string;
+  url: string;
 }
 
-export interface Props {
-  items: BreadcrumbItem[];
+const crumbs: Crumb[] = [{ label: "Home", url: "/" }];
+
+// Walk up the parent chain
+const parentChain: string[] = [];
+let current = post.seoParent;
+while (current && postMap[current]) {
+  parentChain.unshift(current);
+  const parentPost = postMap[current];
+  current = parentPost.data?.seoParent || parentPost.seoParent;
 }
 
-const { items } = Astro.props;
+// Add parents to crumbs
+for (const slug of parentChain) {
+  crumbs.push({ label: getPostTitle(slug), url: getPostUrl(slug) });
+}
 
+// Current page (no link)
+const currentTitle = post.title?.length > 45 ? post.title.substring(0, 42) + "..." : post.title;
+
+// Tier info
+const tier = post.seoTier || "spoke";
+const tierInfo = tierColors[tier] || tierColors.spoke;
+
+// JSON-LD breadcrumb structured data
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": items.map((item, index) => ({
+  itemListElement: crumbs.map((c, i) => ({
     "@type": "ListItem",
-    "position": index + 1,
-    "name": item.label,
-    "item": new URL(item.href, "https://protrainerprep.com").toString(),
-  })),
+    position: i + 1,
+    name: c.label,
+    item: `https://protrainerprep.com${c.url}`,
+  })).concat([{
+    "@type": "ListItem",
+    position: crumbs.length + 1,
+    name: post.title,
+    item: `https://protrainerprep.com${getPostUrl(post.slug)}`,
+  }]),
 };
 ---
 
-<nav aria-label="Breadcrumb" class="mb-3">
-  <ol class="flex flex-wrap items-center gap-1 text-xs text-gray-400">
-    {items.map((item, index) => (
-      <li class="flex items-center">
-        {index > 0 && <span class="mx-1 text-gray-600">/</span>}
-        {index < items.length - 1 ? (
-          <a href={item.href} class="hover:text-indigo-400 hover:underline transition-colors">
-            {item.label}
-          </a>
-        ) : (
-          <span class="text-gray-300">{item.label}</span>
-        )}
-      </li>
-    ))}
-  </ol>
+<nav aria-label="Breadcrumb" class="not-prose mb-6 flex items-center gap-2 flex-wrap text-sm">
+  {crumbs.map((crumb, i) => (
+    <Fragment>
+      <a href={crumb.url} class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-indigo-400 transition-colors">
+        {crumb.label}
+      </a>
+      <span class="text-gray-300 dark:text-gray-600">/</span>
+    </Fragment>
+  ))}
+  <span class="text-gray-800 dark:text-gray-200 font-medium">{currentTitle}</span>
+  <span class={`ml-2 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider ${tierInfo.bg} ${tierInfo.text}`}>
+    {tierInfo.label}
+  </span>
 </nav>
 
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
