@@ -16,7 +16,7 @@ import config from './site.config.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = resolve(__dirname, '..', config.distDir);
-const pages = discoverPages(distDir, config.pagePattern, config.excludeDirs);
+const pages = discoverPages(distDir, config.pagePattern, config.excludeDirs, config.discoverOpts);
 const run = createRunner(config);
 const results = createResults();
 

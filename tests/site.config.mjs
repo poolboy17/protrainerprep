@@ -3,13 +3,16 @@ export default {
   siteName: 'ProTrainerPrep',
   distDir: './dist',
 
-  // Blog posts live under /[...blog]/ — match any folder in dist/
-  // that looks like a blog slug (lowercase words with hyphens).
-  // Excludes top-level static pages (index, 404, privacy, etc.)
-  pagePattern: /^[a-z][a-z0-9-]+[a-z0-9]$/,
+  // Blog posts are nested: dist/category-name/slug/index.html
+  // Match anything that looks like category/slug (two levels deep).
+  // Also match top-level content pages (privacy, terms, etc.).
+  pagePattern: /^.+$/,
 
-  // Directories to skip when scanning dist/
-  excludeDirs: ['_astro', 'rss.xml', 'category', 'tag'],
+  // Use recursive discovery to find nested blog posts
+  discoverOpts: { recursive: true },
+
+  // Directories to skip
+  excludeDirs: ['_astro', 'rss.xml', 'tag', '404.html'],
 
   checks: {
     duplicateIds: true,
