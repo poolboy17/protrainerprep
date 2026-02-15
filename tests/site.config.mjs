@@ -12,7 +12,7 @@ export default {
   discoverOpts: { recursive: true },
 
   // Directories to skip
-  excludeDirs: ['_astro', 'rss.xml', 'tag', '404.html'],
+  excludeDirs: ['_astro', 'rss.xml', 'tag', '404.html', 'decapcms'],
 
   checks: {
     duplicateIds: true,
