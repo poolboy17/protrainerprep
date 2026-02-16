@@ -92,3 +92,61 @@ component tags and import lines from banned word scanning.
 | Spokes per hub | 10 | 12 (career-building, career-change) / 10 (certifications) |
 | Total articles | 34 | Scale as needed |
 | Hub count | 3 + 1 pillar | Add hubs for new topic clusters |
+
+---
+
+## Page Templates (source of truth for structure)
+
+Every page MUST be built from its corresponding template.
+Templates live in `docs/templates/` and define:
+- Required H2 sections
+- Required components per section
+- Linking obligations
+- Word count per section
+- QC checklist
+
+| Page Type | Template | Min H2s | Min Components |
+|-----------|----------|---------|----------------|
+| Pillar | PILLAR-TEMPLATE.md | 8 | 6 types |
+| Hub | HUB-TEMPLATE.md | 6 | 4 types |
+| Sub-Hub | HUB-TEMPLATE.md | 6 | 4 types |
+| Spoke | SPOKE-TEMPLATE.md | 4 | 3 types |
+
+---
+
+## Scaffold Gate (BLOCK — runs before hydration)
+
+No prose is written until the scaffold passes validation.
+The scaffold defines H2 headings, component slots, link placements,
+and section word targets. See `docs/templates/SCAFFOLD-GATE.md`.
+
+```bash
+python workflow_engine.py validate-scaffold --slug article-slug --tier spoke
+```
+
+**If scaffold fails → hydration is blocked.**
+
+---
+
+## Pipeline Enforcement Order
+
+```
+1. Template selected (based on seoTier)
+2. Frontmatter populated
+3. Scaffold created (H2s, components, links planned)
+4. ── SCAFFOLD GATE ── (must pass)
+5. Prose hydration (fill in the skeleton)
+6. ── POST-HYDRATION GATE ── (must pass)
+7. Publish
+```
+
+---
+
+## Valid Categories (updated 2026-02-16)
+
+- guides
+- certifications
+- career-change
+- career-building
+- career-growth
+- ceu
