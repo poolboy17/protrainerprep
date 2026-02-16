@@ -35,7 +35,7 @@ ALL_SPOKES = []
 ALL_HUBS = []
 ALL_SLUGS = []
 
-VALID_CATEGORIES = ['guides', 'reviews', 'comparisons', 'career', 'deals', 'business', 'certifications']
+VALID_CATEGORIES = ['guides', 'certifications', 'career-change', 'career-building', 'career-growth', 'ceu']
 
 FILLER_PHRASES = [
     'in today\'s world', 'it\'s important to note', 'it goes without saying',
@@ -77,11 +77,24 @@ def count_words(body):
     return len(clean.split())
 
 def extract_internal_links(content):
-    md = re.findall(r'\(/blog/([^)"\'\s]+)', content)
-    href = re.findall(r'href="/blog/([^"]+)"', content)
-    props = re.findall(r'href:\s*"/blog/([^"]+)"', content)
-    all_links = md + href + props
-    return list(set([l.rstrip('/').split('#')[0].split('?')[0] for l in all_links]))
+    """Extract internal link slugs from all URL patterns: /{category}/{slug}"""
+    patterns = [
+        r'\]\(/([^)"\'\s]+)',          # markdown: [text](/path)
+        r'href="/([^"]+)"',                  # HTML: href="/path"
+        r'href:\s*"/([^"]+)"',              # component prop: href="/path"
+    ]
+    all_links = []
+    for pattern in patterns:
+        all_links.extend(re.findall(pattern, content))
+    slugs = []
+    for link in all_links:
+        link = link.rstrip('/').split('#')[0].split('?')[0]
+        parts = link.split('/')
+        if len(parts) >= 2:
+            slug = parts[-1]
+            if slug and not slug.startswith('.') and not any(slug.endswith(ext) for ext in ['.css', '.js', '.png', '.jpg', '.svg', '.xml']):
+                slugs.append(slug)
+    return list(set(slugs))
 
 def extract_affiliate_ids(content):
     return list(set(re.findall(r'sjv\.io/c/3162789/(\d+)/12472', content)))
