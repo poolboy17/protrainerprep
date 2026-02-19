@@ -309,3 +309,8 @@
   from = "/blog/youth-fitness-certification"
   to = "/career-growth/youth-fitness-certification"
   status = 301
+
+[[redirects]]
+  from = "/blog/nasm-vs-ace-vs-issa"
+  to = "/certifications/nasm-vs-ace-vs-issa"
+  status = 301
