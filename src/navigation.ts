@@ -18,6 +18,10 @@ export const headerData = {
       text: 'Career Building',
       href: '/career-building/career-building-guide',
     },
+    {
+      text: 'Career Growth',
+      href: '/career-growth/career-growth-guide',
+    },
   ],
   actions: [{ text: 'Get Certified', href: '/certifications/fitness-certification-guide', variant: 'primary' }],
 };
@@ -31,6 +35,7 @@ export const footerData = {
         { text: 'Certification Guide', href: '/certifications/fitness-certification-guide' },
         { text: 'Career Change Guide', href: '/career-change/career-change-fitness-guide' },
         { text: 'Career Building Guide', href: '/career-building/career-building-guide' },
+        { text: 'Career Growth Guide', href: '/career-growth/career-growth-guide' },
       ],
     },
     {
