@@ -11,6 +11,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Note from '~/components/widgets/Note.astro';
+import EmailCapture from '~/components/widgets/EmailCapture.astro';
 
 const metadata = {
   title: 'Pro Trainer Prep — Your Independent Guide to Fitness Certifications',
@@ -245,6 +246,12 @@ const metadata = {
       <div class="absolute inset-0 bg-green-50/30 dark:bg-slate-800/30"></div>
     </Fragment>
   </FAQs>
+
+  <EmailCapture>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-gradient-to-b from-white via-green-50/40 to-white dark:from-slate-900 dark:via-slate-800/60 dark:to-slate-900"></div>
+    </Fragment>
+  </EmailCapture>
 
   <CallToAction
     actions={[

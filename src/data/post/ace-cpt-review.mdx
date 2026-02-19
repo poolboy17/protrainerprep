@@ -4,7 +4,7 @@ title: >
   ACE CPT Review: The Behavior-Change Certification
 excerpt: >
   An honest review of the ACE CPT credential covering real costs, exam difficulty, and whether the behavior-change focus is worth it.
-image: https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=900&q=80&fit=crop
+image: ~/assets/images/articles/ace-cpt-review.jpg
 category: certifications
 tags:
   - certification
@@ -40,6 +40,15 @@ import KeyTakeaway from '~/components/blog/KeyTakeaway.astro';
 import ProTip from '~/components/blog/ProTip.astro';
 import RealMath from '~/components/blog/RealMath.astro';
 import BottomLine from '~/components/blog/BottomLine.astro';
+import ReviewSchema from '~/components/blog/ReviewSchema.astro';
+
+<ReviewSchema
+  name="ACE CPT Certification"
+  rating={3.8}
+  verdict={frontmatter.verdict}
+  url="https://protrainerprep.com/certifications/ace-cpt-review"
+  author="Pro Trainer Prep"
+/>
 
 <QuickAnswer
   answer={frontmatter.quickAnswer}

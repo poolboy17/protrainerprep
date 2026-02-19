@@ -1,0 +1,55 @@
+---
+/**
+ * Review JSON-LD structured data for certification review articles.
+ * Generates schema.org/Review markup for rich snippets.
+ *
+ * Usage in MDX (via SinglePost auto-injection or manual):
+ *   <ReviewSchema
+ *     name="NASM CPT Certification"
+ *     rating={4.0}
+ *     verdict="..."
+ *     url="https://protrainerprep.com/certifications/nasm-cpt-review"
+ *     author="Pro Trainer Prep"
+ *   />
+ */
+
+export interface Props {
+  name: string;
+  rating: number;
+  verdict: string;
+  url: string;
+  author?: string;
+  image?: string;
+}
+
+const { name, rating, verdict, url, author = 'Pro Trainer Prep', image } = Astro.props;
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "EducationalOccupationalCredential",
+    "name": name,
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": rating,
+    "bestRating": 5,
+    "worstRating": 1,
+  },
+  "author": {
+    "@type": "Organization",
+    "name": author,
+    "url": "https://protrainerprep.com",
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pro Trainer Prep",
+    "url": "https://protrainerprep.com",
+  },
+  "reviewBody": verdict,
+  "url": url,
+  ...(image ? { image } : {}),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(reviewSchema)} />

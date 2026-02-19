@@ -51,6 +51,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
+    { text: 'About', href: getPermalink('/about') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
     { text: 'Terms of Service', href: getPermalink('/terms') },
     { text: 'Affiliate Disclosure', href: getPermalink('/affiliate-disclosure') },

@@ -1,0 +1,60 @@
+---
+/**
+ * Email capture / lead magnet component.
+ * Static Astro site — form submits to Netlify Forms for collection.
+ * No JS required; Netlify handles the backend.
+ */
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  id?: string;
+}
+
+const {
+  title = 'Get the Free Certification Cost Cheat Sheet',
+  subtitle = 'Side-by-side 4-year cost comparison of NCSF, NASM, ACE, and ISSA — including hidden fees most sites don\'t mention.',
+  id,
+} = Astro.props;
+---
+
+<section class="relative not-prose" {...id ? { id } : {}}>
+  <slot name="bg" />
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-16 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight dark:text-white mb-3">
+      {title}
+    </h2>
+    <p class="text-base md:text-lg text-muted dark:text-slate-300 mb-6 max-w-xl mx-auto">
+      {subtitle}
+    </p>
+    <form
+      name="lead-magnet"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thank-you"
+      class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+    >
+      <input type="hidden" name="form-name" value="lead-magnet" />
+      <p class="hidden">
+        <label>Don't fill this out: <input name="bot-field" /></label>
+      </p>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Your email address"
+        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 dark:bg-slate-800 dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+      />
+      <button
+        type="submit"
+        class="px-6 py-3 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold text-base transition-colors whitespace-nowrap"
+      >
+        Send It Free
+      </button>
+    </form>
+    <p class="text-xs text-gray-400 dark:text-slate-500 mt-3">
+      No spam. Unsubscribe anytime. We respect your
+      <a href="/privacy" class="underline hover:text-gray-600 dark:hover:text-slate-400">privacy</a>.
+    </p>
+  </div>
+</section>

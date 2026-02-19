@@ -1,0 +1,30 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Thank You — Pro Trainer Prep',
+  description: 'Thanks for signing up. Check your inbox for the certification cost cheat sheet.',
+  robots: { index: false, follow: false },
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-20 text-center max-w-2xl mx-auto px-4">
+    <div class="text-5xl mb-6">&#10003;</div>
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">You're In!</h1>
+    <p class="text-lg text-muted dark:text-slate-300 mb-8">
+      Check your inbox for the Certification Cost Cheat Sheet. While you wait, here are
+      the guides our readers find most useful:
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/guides/how-to-become-personal-trainer"
+        class="px-6 py-3 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors">
+        Career Guide
+      </a>
+      <a href="/certifications/fitness-certification-guide"
+        class="px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 hover:bg-gray-50 dark:hover:bg-slate-800 font-semibold dark:text-white transition-colors">
+        Compare Certifications
+      </a>
+    </div>
+  </section>
+</Layout>
