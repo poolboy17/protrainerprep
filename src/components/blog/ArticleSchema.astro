@@ -12,19 +12,28 @@ export interface Props {
   author?: string;
   image?: string;
   url: string;
+  category?: string;
 }
 
-const { title, description, publishDate, updateDate, author, image, url } = Astro.props;
+const { title, description, publishDate, updateDate, author, image, url, category } = Astro.props;
 
 const jsonLd: Record<string, unknown> = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": title,
   "url": url,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": url,
+  },
   "publisher": {
     "@type": "Organization",
     "name": "Pro Trainer Prep",
     "url": "https://protrainerprep.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://protrainerprep.com/favicon.svg",
+    },
   },
 };
 
@@ -34,6 +43,7 @@ if (publishDate) jsonLd.datePublished = publishDate.toISOString();
 if (updateDate) jsonLd.dateModified = updateDate.toISOString();
 else if (publishDate) jsonLd.dateModified = publishDate.toISOString();
 if (image) jsonLd.image = image;
+if (category) jsonLd.articleSection = category;
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

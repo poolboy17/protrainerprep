@@ -192,3 +192,120 @@
   from = "/blog/gym-vs-independent-personal-trainer"
   to = "/career-building/gym-vs-independent-personal-trainer"
   status = 301
+
+
+# ============================================================
+# Phase 3: Additional 301 Redirects — career-growth + certifications CEU pages
+# ============================================================
+
+# Certifications — CEU & recertification pages
+[[redirects]]
+  from = "/blog/ace-recertification-cost"
+  to = "/certifications/ace-recertification-cost"
+  status = 301
+
+[[redirects]]
+  from = "/blog/best-online-ceu-providers"
+  to = "/certifications/best-online-ceu-providers"
+  status = 301
+
+[[redirects]]
+  from = "/blog/certification-expired-what-now"
+  to = "/certifications/certification-expired-what-now"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ceu-recertification-guide"
+  to = "/certifications/ceu-recertification-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/cheapest-ceu-options"
+  to = "/certifications/cheapest-ceu-options"
+  status = 301
+
+[[redirects]]
+  from = "/blog/fitness-conference-guide-ceus"
+  to = "/certifications/fitness-conference-guide-ceus"
+  status = 301
+
+[[redirects]]
+  from = "/blog/free-ceus-personal-trainers"
+  to = "/certifications/free-ceus-personal-trainers"
+  status = 301
+
+[[redirects]]
+  from = "/blog/nasm-recertification-cost"
+  to = "/certifications/nasm-recertification-cost"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ncsf-certification-renewal"
+  to = "/certifications/ncsf-certification-renewal"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ncsf-ceu-courses"
+  to = "/certifications/ncsf-ceu-courses"
+  status = 301
+
+[[redirects]]
+  from = "/blog/skills-certification-didnt-teach"
+  to = "/certifications/skills-certification-didnt-teach"
+  status = 301
+
+# Career growth pages
+[[redirects]]
+  from = "/blog/alternative-careers-personal-trainers"
+  to = "/career-growth/alternative-careers-personal-trainers"
+  status = 301
+
+[[redirects]]
+  from = "/blog/career-growth-guide"
+  to = "/career-growth/career-growth-guide"
+  status = 301
+
+[[redirects]]
+  from = "/blog/certified-nutrition-coach"
+  to = "/career-growth/certified-nutrition-coach"
+  status = 301
+
+[[redirects]]
+  from = "/blog/corporate-wellness-jobs-trainers"
+  to = "/career-growth/corporate-wellness-jobs-trainers"
+  status = 301
+
+[[redirects]]
+  from = "/blog/exercise-physiologist-vs-personal-trainer"
+  to = "/career-growth/exercise-physiologist-vs-personal-trainer"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-nutrition-scope"
+  to = "/career-growth/personal-trainer-nutrition-scope"
+  status = 301
+
+[[redirects]]
+  from = "/blog/personal-trainer-to-gym-manager"
+  to = "/career-growth/personal-trainer-to-gym-manager"
+  status = 301
+
+[[redirects]]
+  from = "/blog/prenatal-postpartum-training-certification"
+  to = "/career-growth/prenatal-postpartum-training-certification"
+  status = 301
+
+[[redirects]]
+  from = "/blog/strength-conditioning-coach-cscs-csc"
+  to = "/career-growth/strength-conditioning-coach-cscs-csc"
+  status = 301
+
+[[redirects]]
+  from = "/blog/training-older-adults-certification"
+  to = "/career-growth/training-older-adults-certification"
+  status = 301
+
+[[redirects]]
+  from = "/blog/youth-fitness-certification"
+  to = "/career-growth/youth-fitness-certification"
+  status = 301

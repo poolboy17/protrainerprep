@@ -1,0 +1,71 @@
+---
+/**
+ * Homepage JSON-LD structured data.
+ * Includes Organization, WebSite (with SearchAction), and FAQPage schemas.
+ */
+
+const faqs = [
+  {
+    question: 'Do I need a college degree to become a personal trainer?',
+    answer: 'No. Most certifications only require a high school diploma and CPR/AED certification. A degree helps but is not required by any major certification body.',
+  },
+  {
+    question: 'How much do personal trainers actually make?',
+    answer: 'Year 1 averages $25–32K at a commercial gym. Experienced trainers at busy gyms or running independent businesses can reach $60–100K+.',
+  },
+  {
+    question: 'Which certification should I get?',
+    answer: 'For most people, NCSF offers the best value — NCCA-accredited (same as NASM), roughly half the price, and accepted at major gym chains. But the right cert depends on your goals, budget, and timeline.',
+  },
+  {
+    question: 'How long does it take to get certified?',
+    answer: 'Most people study for 3–6 months while working their current job. Some accelerated programs can get you certified in 4–8 weeks if you study full-time.',
+  },
+  {
+    question: 'Is personal training a good career in 2026?',
+    answer: 'The Bureau of Labor Statistics projects 14% job growth through 2032 — much faster than average. The key is treating it as a business, not just a passion project.',
+  },
+  {
+    question: 'Are you affiliated with any certification company?',
+    answer: 'We earn affiliate commissions when you purchase through our links (at no extra cost to you). This is how we keep the site free. We review every certification honestly — including the ones that do not pay us.',
+  },
+];
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pro Trainer Prep",
+  "url": "https://protrainerprep.com",
+  "description": "Your independent guide to fitness certifications. Real salary data, honest certification reviews, and career advice for aspiring personal trainers.",
+  "logo": "https://protrainerprep.com/favicon.svg",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Pro Trainer Prep",
+  "url": "https://protrainerprep.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://protrainerprep.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

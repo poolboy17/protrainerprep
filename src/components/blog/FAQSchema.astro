@@ -1,0 +1,33 @@
+---
+/**
+ * FAQPage JSON-LD structured data.
+ * Import in any MDX article that has a FAQ section and pass Q&A pairs.
+ *
+ * Usage in MDX:
+ *   import FAQSchema from '~/components/blog/FAQSchema.astro';
+ *   <FAQSchema faqs={[
+ *     { question: "...", answer: "..." },
+ *   ]} />
+ */
+
+export interface Props {
+  faqs: Array<{ question: string; answer: string }>;
+}
+
+const { faqs } = Astro.props;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer,
+    },
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

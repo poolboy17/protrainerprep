@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import HomepageSchema from '~/components/HomepageSchema.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -14,10 +15,12 @@ import Note from '~/components/widgets/Note.astro';
 const metadata = {
   title: 'Pro Trainer Prep — Your Independent Guide to Fitness Certifications',
   ignoreTitleTemplate: true,
+  description: 'Compare personal trainer certifications with real cost data. Independent reviews of NCSF, NASM, ACE, and ISSA — plus career guides for aspiring fitness professionals.',
 };
 ---
 
 <Layout metadata={metadata}>
+  <HomepageSchema />
   <Hero
     actions={[
       {

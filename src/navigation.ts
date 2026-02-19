@@ -36,7 +36,7 @@ export const footerData = {
     {
       title: 'Popular Comparisons',
       links: [
-        { text: 'NASM vs ACE vs ISSA', href: '/certifications/nasm-vs-ace-vs-issa' },
+        { text: 'NASM vs ACE', href: '/certifications/nasm-vs-ace' },
         { text: 'NASM vs NCSF', href: '/certifications/nasm-vs-ncsf' },
         { text: 'Cheapest Certifications', href: '/certifications/cheapest-personal-trainer-certifications' },
       ],

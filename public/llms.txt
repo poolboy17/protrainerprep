@@ -1,0 +1,74 @@
+# ProTrainerPrep.com
+> Your independent guide to personal trainer certifications. Real cost data, honest reviews, and career advice for aspiring fitness professionals.
+
+## Main Guides
+- /guides/how-to-become-personal-trainer: Complete step-by-step guide to becoming a certified personal trainer
+- /certifications/fitness-certification-guide: Compare top fitness certifications (NASM, ACE, NCSF, ISSA) side by side
+
+## Certification Reviews
+- /certifications/ncsf-cpt-review: In-depth NCSF CPT certification review — our top budget pick
+- /certifications/nasm-cpt-review: NASM CPT certification review with real cost analysis
+- /certifications/ace-cpt-review: ACE CPT certification review and breakdown
+- /certifications/issa-cpt-review: ISSA CPT certification review and comparison
+
+## Certification Comparisons
+- /certifications/nasm-vs-ace: NASM vs ACE head-to-head comparison
+- /certifications/nasm-vs-ncsf: NASM vs NCSF cost and value comparison
+- /certifications/best-cert-career-changers: Best certifications for career changers
+- /certifications/cheapest-personal-trainer-certifications: Cheapest personal trainer certification options
+
+## Career Change Resources
+- /career-change/career-change-fitness-guide: Complete guide to switching careers into fitness
+- /career-change/career-change-fitness-after-40: Becoming a personal trainer after 40
+- /career-change/career-change-fitness-after-50: Fitness career change after 50
+- /career-change/is-it-too-late-to-become-personal-trainer: Is it too late to become a personal trainer?
+- /career-change/corporate-to-certified-timeline: Corporate job to certified trainer timeline
+- /career-change/military-to-personal-trainer: Military to personal trainer transition guide
+- /career-change/teacher-to-personal-trainer: Teacher to personal trainer career path
+- /career-change/nurse-to-personal-trainer: Nurse to personal trainer transition
+- /career-change/personal-trainer-without-degree: Becoming a personal trainer without a degree
+- /career-change/afford-fitness-certification: How to afford a fitness certification
+- /career-change/fitness-careers-no-gym: Fitness careers that don't require a gym
+
+## Career Building
+- /career-building/career-building-guide: Comprehensive career building guide for trainers
+- /career-building/personal-trainer-salary: Personal trainer salary data and earning potential
+- /career-building/get-first-10-clients: How to get your first 10 personal training clients
+- /career-building/personal-training-pricing: How to price personal training sessions
+- /career-building/personal-trainer-marketing: Marketing strategies for personal trainers
+- /career-building/personal-trainer-niche-specialization: Finding your personal training niche
+- /career-building/personal-trainer-100k: How to make $100K as a personal trainer
+- /career-building/part-time-personal-trainer: Part-time personal training guide
+- /career-building/online-vs-in-person-personal-training: Online vs in-person personal training
+- /career-building/gym-vs-independent-personal-trainer: Gym employee vs independent trainer
+- /career-building/is-personal-training-good-career: Is personal training a good career?
+
+## Career Growth & Specializations
+- /career-growth/career-growth-guide: Career growth roadmap for personal trainers
+- /career-growth/certified-nutrition-coach: Nutrition coaching certification guide
+- /career-growth/strength-conditioning-coach-cscs-csc: CSCS and strength conditioning paths
+- /career-growth/prenatal-postpartum-training-certification: Prenatal/postpartum specialization
+- /career-growth/training-older-adults-certification: Senior fitness certification guide
+- /career-growth/youth-fitness-certification: Youth fitness certification options
+- /career-growth/corporate-wellness-jobs-trainers: Corporate wellness career opportunities
+- /career-growth/alternative-careers-personal-trainers: Alternative careers for trainers
+- /career-growth/exercise-physiologist-vs-personal-trainer: Exercise physiologist vs personal trainer
+- /career-growth/personal-trainer-to-gym-manager: From trainer to gym manager
+- /career-growth/personal-trainer-nutrition-scope: Nutrition scope of practice for trainers
+
+## Continuing Education
+- /certifications/ceu-recertification-guide: CEU and recertification guide
+- /certifications/ncsf-ceu-courses: NCSF CEU course options
+- /certifications/free-ceus-personal-trainers: Free CEU options for personal trainers
+- /certifications/cheapest-ceu-options: Cheapest CEU providers
+- /certifications/best-online-ceu-providers: Best online CEU providers
+- /certifications/fitness-conference-guide-ceus: Fitness conferences that offer CEUs
+- /certifications/ncsf-certification-renewal: NCSF certification renewal process
+- /certifications/nasm-recertification-cost: NASM recertification costs
+- /certifications/ace-recertification-cost: ACE recertification costs
+- /certifications/personal-trainer-certification-renewal: General certification renewal guide
+- /certifications/certification-expired-what-now: What to do when your certification expires
+
+## Exam Prep
+- /certifications/how-hard-is-personal-trainer-exam: How hard is the personal trainer exam?
+- /certifications/skills-certification-didnt-teach: Skills your certification didn't teach you

@@ -1,0 +1,30 @@
+---
+/**
+ * Author bio card displayed at the bottom of articles.
+ * Strengthens E-E-A-T signals for this YMYL-adjacent fitness content.
+ */
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  author?: string;
+}
+
+const { author = 'Pro Trainer Prep' } = Astro.props;
+---
+
+<aside class="mt-10 mb-6 border border-gray-200 dark:border-slate-700 rounded-lg p-6 bg-gray-50 dark:bg-slate-800/50">
+  <div class="flex items-start gap-4">
+    <div class="flex-shrink-0 w-14 h-14 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+      <Icon name="tabler:user-check" class="w-7 h-7 text-green-600 dark:text-green-400" />
+    </div>
+    <div>
+      <p class="font-bold text-base text-gray-900 dark:text-white mb-1">{author}</p>
+      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+        Pro Trainer Prep is an independent fitness education resource. Our content is researched and reviewed by certified personal trainers and fitness industry professionals. We are not owned by any certification company — every review uses real cost data and honest analysis to help you make informed career decisions.
+      </p>
+      <p class="text-xs text-gray-500 dark:text-gray-500 mt-2">
+        <a href="/affiliate-disclosure" class="underline hover:text-gray-700 dark:hover:text-gray-300">Affiliate disclosure</a>
+      </p>
+    </div>
+  </div>
+</aside>
