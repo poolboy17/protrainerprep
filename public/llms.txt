@@ -13,6 +13,7 @@
 
 ## Certification Comparisons
 - /certifications/nasm-vs-ace: NASM vs ACE head-to-head comparison
+- /certifications/nasm-vs-ace-vs-issa: NASM vs ACE vs ISSA three-way comparison (cost, accreditation, exam format)
 - /certifications/nasm-vs-ncsf: NASM vs NCSF cost and value comparison
 - /certifications/best-cert-career-changers: Best certifications for career changers
 - /certifications/cheapest-personal-trainer-certifications: Cheapest personal trainer certification options
