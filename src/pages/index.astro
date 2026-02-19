@@ -32,7 +32,7 @@ const metadata = {
       { text: 'Compare Certifications', href: '/blog/fitness-certification-guide' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&fit=crop',
+      src: '~/assets/images/homepage/hero-gym.jpg',
       alt: 'Modern gym interior with equipment and natural lighting',
     }}
   >
@@ -53,7 +53,7 @@ const metadata = {
 
   <Stats
     title="The Numbers That Matter"
-    subtitle="Real data from industry sources — not marketing claims."
+    subtitle="Real data from industry sources — not marketing claims. <span class='text-xs text-gray-400'>(BLS Occupational Outlook 2024)</span>"
     stats={[
       { title: 'Job Growth by 2032', amount: '14%' },
       { title: 'Median Salary', amount: '$46K' },
@@ -71,23 +71,23 @@ const metadata = {
     items={[
       {
         title: 'Real Cost Comparisons',
-        description: '4-year total cost of ownership for every major certification — not just the sticker price.',
-        icon: 'tabler:currency-dollar',
+        description: '4-year total cost of ownership for every major certification — not just the sticker price. Every claim comes with sourced numbers.',
+        icon: 'tabler:calculator',
       },
       {
-        title: 'Honest Reviews',
-        description: 'We call out overpriced certifications by name. NCSF at ~$699 total vs. NASM at ~$1,397? You deserve to know.',
-        icon: 'tabler:star',
+        title: 'Honest, Independent Reviews',
+        description: 'We call out overpriced certifications by name. NCSF at ~$699 total vs. NASM at ~$1,397? You deserve to know. No gatekeeping, no paywalls.',
+        icon: 'tabler:scale',
       },
       {
         title: 'Career-First Advice',
-        description: 'Salary data, client acquisition strategies, and business plans — not just exam prep tips.',
-        icon: 'tabler:briefcase',
+        description: 'Salary data, client acquisition strategies, and business plans for career changers — not generic exam prep tips for college kids.',
+        icon: 'tabler:trending-up',
       },
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-slate-800/50"></div>
     </Fragment>
   </Features>
 
@@ -118,7 +118,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=80&fit=crop',
+      src: '~/assets/images/homepage/strength-training.jpg',
       alt: 'Person doing strength training with dumbbells',
     }}
   >
@@ -151,7 +151,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&q=80&fit=crop',
+      src: '~/assets/images/homepage/trainer-client.jpg',
       alt: 'Personal trainer helping client with exercise form',
     }}
   >
@@ -159,13 +159,13 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Half the cost. Same accreditation.</h3>
       The gym that hires you will check if your cert is NCCA-accredited. They won't care which logo is on it.
       <div class="mt-4">
-        <a href="https://nationalcouncilonstrength.sjv.io/c/3162789/1092567/12472" target="_blank" rel="nofollow sponsored" class="inline-flex items-center gap-2 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 text-sm transition-colors">Save $400 on NCSF → <span class="text-green-200 text-xs font-normal">Limited offer</span></a>
+        <a href="https://nationalcouncilonstrength.sjv.io/c/3162789/1092567/12472" target="_blank" rel="nofollow sponsored" class="inline-flex items-center gap-2 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 text-sm transition-colors">Save $400 on NCSF → <span class="text-green-200 text-xs font-normal">2026 pricing</span></a>
       </div>
       <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Affiliate link — you pay nothing extra. <a href="/blog/ncsf-cpt-review" class="underline">Read our full review</a></p>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-slate-800/50"></div>
     </Fragment>
   </Content>
 
@@ -175,52 +175,29 @@ const metadata = {
     items={[
       {
         title: 'Step 1: <span class="font-medium">Decide if it is right for you</span>',
-        description: 'Read our honest pros and cons. Look at real salary data ($25–32K year one, $40–55K by year three). This is a career move, not a hobby.',
+        description: 'Read our honest <a href="/guides/how-to-become-personal-trainer" class="text-primary hover:underline">pros and cons</a>. Look at real salary data ($25–32K year one, $40–55K by year three). This is a career move, not a hobby.',
         icon: 'tabler:brain',
       },
       {
         title: 'Step 2: <span class="font-medium">Pick the right certification</span>',
-        description: 'NCSF, NASM, ACE, ISSA — they are not the same. We break down cost, difficulty, employer recognition, and recertification fees side by side.',
+        description: 'NCSF, NASM, ACE, ISSA — they are not the same. We <a href="/certifications/fitness-certification-guide" class="text-primary hover:underline">break down cost, difficulty, employer recognition, and recertification fees</a> side by side.',
         icon: 'tabler:certificate',
       },
       {
         title: 'Step 3: <span class="font-medium">Study and pass your exam</span>',
-        description: 'Most exams take 8–12 weeks of prep at 1–2 hours per day. Pass rates are 60–75% — you need to study, but it is not the MCAT.',
+        description: 'Most exams take 8–12 weeks of prep at 1–2 hours per day. Pass rates are 60–75% — you need to study, but it is not the MCAT. See our <a href="/certifications/ncsf-cpt-review" class="text-primary hover:underline">NCSF exam review</a>.',
         icon: 'tabler:book',
       },
       {
         title: 'Step 4: <span class="font-medium">Land your first job and build your book</span>',
-        description: 'Get hired at a gym, survive floor hours, get your first 10 clients, and start building the business that actually pays the bills.',
+        description: 'Get hired at a gym, survive floor hours, <a href="/career-building/get-first-10-personal-training-clients" class="text-primary hover:underline">get your first 10 clients</a>, and start building the business that actually pays the bills.',
         icon: 'tabler:rocket',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&fit=crop',
+      src: '~/assets/images/homepage/trainer-session.jpg',
       alt: 'Personal trainer with client in gym setting',
     }}
-  />
-
-  <Features
-    title="What sets us apart"
-    subtitle="There are dozens of certification review sites. Most are owned by the companies they review."
-    columns={3}
-    items={[
-      {
-        title: 'Data-Backed Everything',
-        description: 'Every claim comes with numbers. Salary ranges, pass rates, recertification costs — all sourced and verified.',
-        icon: 'tabler:chart-bar',
-      },
-      {
-        title: 'Written for Adults',
-        description: 'You are not 22 and fresh out of college. Our content speaks to people making a real career transition.',
-        icon: 'tabler:user-check',
-      },
-      {
-        title: 'No Gatekeeping',
-        description: 'Free guides, free comparisons, free templates. We make money through affiliate links, not paywalls.',
-        icon: 'tabler:lock-open',
-      },
-    ]}
   />
 
   <BlogLatestPosts
@@ -228,7 +205,7 @@ const metadata = {
     information="In-depth guides, certification reviews, and career advice for aspiring personal trainers."
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-50/50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-green-50/50 dark:bg-slate-800/50"></div>
     </Fragment>
   </BlogLatestPosts>
 
@@ -265,7 +242,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-50/30 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-green-50/30 dark:bg-slate-800/30"></div>
     </Fragment>
   </FAQs>
 

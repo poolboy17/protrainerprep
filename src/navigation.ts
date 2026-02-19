@@ -19,7 +19,7 @@ export const headerData = {
       href: '/career-building/career-building-guide',
     },
   ],
-  actions: [],
+  actions: [{ text: 'Get Certified', href: '/certifications/fitness-certification-guide', variant: 'primary' }],
 };
 
 export const footerData = {
