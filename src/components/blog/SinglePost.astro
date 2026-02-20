@@ -24,6 +24,19 @@ const { post, url } = Astro.props;
 const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
 ---
 
+<!-- Reading progress bar -->
+<div id="reading-progress" class="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#4f46e5] to-[#16a34a] z-50 transition-[width] duration-150 ease-out" style="width: 0%"></div>
+
+<script>
+  const bar = document.getElementById('reading-progress');
+  if (bar) {
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = h > 0 ? Math.min((window.scrollY / h) * 100, 100) + '%' : '0%';
+    }, { passive: true });
+  }
+</script>
+
 <ArticleSchema
   title={post.title}
   description={post.excerpt}
@@ -200,9 +213,172 @@ const breadcrumbItems = getBreadcrumbs(post.slug, post.title);
     }
   }
 
-  /* Inline images spacing */
-  .article-body > p > img {
+  /* Inline images spacing + framing */
+  .article-body > p > img,
+  .article-body > p > picture > img,
+  .article-body img:not([class*="w-"]) {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+  }
+
+  /* ─── TABLE STYLING ─── */
+  .article-body table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .article-body thead th {
+    background: #0f172a;
+    color: #f1f5f9 !important;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid #4f46e5;
+  }
+  .article-body tbody tr:nth-child(even) {
+    background: #f8fafc;
+  }
+  .article-body tbody tr:hover {
+    background: #eef2ff;
+    transition: background 0.15s ease;
+  }
+  .article-body tbody td {
+    padding: 0.625rem 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.95rem;
+  }
+  .article-body tbody tr:first-child td {
+    font-weight: 600;
+    color: #1e293b;
+    background: #eef2ff;
+  }
+
+  /* ─── BLOCKQUOTE STYLING (pull-quote treatment) ─── */
+  .article-body blockquote {
+    position: relative;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    border-left: 5px solid #4f46e5;
+    border-radius: 0 0.75rem 0.75rem 0;
+    padding: 1.5rem 1.75rem 1.5rem 2rem;
+    margin: 2.5rem 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #334155;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+  }
+  .article-body blockquote::before {
+    content: '\201C';
+    position: absolute;
+    top: -0.25rem;
+    left: 0.75rem;
+    font-size: 3.5rem;
+    color: #c7d2fe;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+  .article-body blockquote p {
+    margin: 0;
+  }
+
+  /* ─── SECTION DIVIDERS (decorative line between major sections) ─── */
+  .article-body > h2 {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+  .article-body > h2:not(:first-of-type)::before {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 3px;
+    background: linear-gradient(90deg, #4f46e5, #16a34a);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ─── UNORDERED & ORDERED LIST ENHANCEMENT ─── */
+  .article-body > ul,
+  .article-body > ol {
+    background: #fafbfc;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+    border: 1px solid #f1f5f9;
+    margin: 1.5rem 0;
+  }
+  .article-body > ul > li::marker {
+    color: #4f46e5;
+    font-weight: 700;
+  }
+  .article-body > ol > li::marker {
+    color: #4f46e5;
+    font-weight: 700;
+  }
+
+  /* ─── HORIZONTAL RULE as section break ─── */
+  .article-body hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+    margin: 3rem 0;
+  }
+
+  /* ─── STRONG/BOLD text subtle highlight ─── */
+  .article-body > p > strong {
+    color: #1e293b;
+    background: linear-gradient(180deg, transparent 60%, #c7d2fe40 60%);
+    padding: 0 2px;
+  }
+
+  /* ─── Dark mode overrides for new styles ─── */
+  @media (prefers-color-scheme: dark) {
+    .article-body table {
+      border-color: #334155;
+    }
+    .article-body thead th {
+      background: #1e293b;
+      border-bottom-color: #6366f1;
+    }
+    .article-body tbody tr:nth-child(even) {
+      background: rgba(30, 41, 59, 0.5);
+    }
+    .article-body tbody tr:hover {
+      background: rgba(79, 70, 229, 0.1);
+    }
+    .article-body tbody tr:first-child td {
+      background: rgba(79, 70, 229, 0.15);
+      color: #e2e8f0;
+    }
+    .article-body tbody td {
+      border-bottom-color: #1e293b;
+    }
+    .article-body blockquote {
+      background: linear-gradient(135deg, #1e293b 0%, rgba(79, 70, 229, 0.1) 100%);
+      color: #cbd5e1;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .article-body blockquote::before {
+      color: #4f46e5;
+    }
+    .article-body > ul,
+    .article-body > ol {
+      background: rgba(30, 41, 59, 0.3);
+      border-color: #334155;
+    }
+    .article-body > p > strong {
+      color: #e2e8f0;
+      background: linear-gradient(180deg, transparent 60%, rgba(99, 102, 241, 0.2) 60%);
+    }
+    .article-body img:not([class*="w-"]) {
+      border-color: #334155;
+    }
   }
 </style>
