@@ -11,19 +11,9 @@ interface Props {
 
 const { items } = Astro.props;
 
-// Tier badge styling
-const tierColors: Record<string, { bg: string; text: string; label: string }> = {
-  pillar: { bg: "bg-purple-100 dark:bg-purple-900/30", text: "text-purple-700 dark:text-purple-300", label: "Pillar" },
-  hub: { bg: "bg-green-100 dark:bg-green-900/30", text: "text-green-700 dark:text-green-300", label: "Hub" },
-  "sub-hub": { bg: "bg-teal-100 dark:bg-teal-900/30", text: "text-teal-700 dark:text-teal-300", label: "Sub-Hub" },
-  spoke: { bg: "bg-slate-100 dark:bg-slate-800", text: "text-slate-600 dark:text-slate-400", label: "Spoke" },
-};
-
 // Last item is the current page
 const lastItem = items[items.length - 1];
 const parentItems = items.slice(0, -1);
-const currentTier = lastItem?.tier || "spoke";
-const tierInfo = tierColors[currentTier] || tierColors.spoke;
 
 // JSON-LD BreadcrumbList
 const jsonLd = {
@@ -52,9 +42,6 @@ const jsonLd = {
   ))}
   <span class="text-gray-200 dark:text-gray-200 font-medium">
     {lastItem?.label.length > 50 ? lastItem.label.substring(0, 47) + "..." : lastItem?.label}
-  </span>
-  <span class={`ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider ${tierInfo.bg} ${tierInfo.text}`}>
-    {tierInfo.label}
   </span>
 </nav>
 
