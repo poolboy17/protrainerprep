@@ -1,6 +1,7 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
 import { findImage } from '~/utils/images';
+import { cdnImage, cdnSrcset } from '~/utils/cdn-image';
 import {
   getImagesOptimized,
   astroAssetsOptimizer,
@@ -56,6 +57,6 @@ if (
   !image ? (
     <Fragment />
   ) : (
-    <img src={image.src} crossorigin="anonymous" referrerpolicy="no-referrer" {...image.attributes} />
+    <img crossorigin="anonymous" referrerpolicy="no-referrer" {...image.attributes} src={cdnImage(image.src)} srcset={cdnSrcset(image.src)} />
   )
 }
