@@ -5,6 +5,10 @@
   pretty_urls = false
 
 # Image optimization
+[images]
+  remote_images = ["https://images\\.pexels\\.com/.*", "https://images\\.unsplash\\.com/.*"]
+
+# Image optimization
 [[headers]]
   for = "/images/*"
   [headers.values]
