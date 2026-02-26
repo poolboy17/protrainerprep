@@ -31,22 +31,25 @@ import RealMath from '~/components/blog/RealMath.astro';
 import BottomLine from '~/components/blog/BottomLine.astro';
 import ChooseIf from '~/components/blog/ChooseIf.astro';
 import FAQSchema from '~/components/blog/FAQSchema.astro';
+import AffiliateDisclosure from '~/components/blog/AffiliateDisclosure.astro';
 
 <QuickAnswer answer={frontmatter.quickAnswer} />
 
+
+<AffiliateDisclosure />
 NASM, ACE, and ISSA are the three most-searched personal trainer certifications — and they represent three genuinely different approaches to fitness education. NASM is systematic and biomechanics-heavy. ACE is behavior-change-focused and communication-driven. ISSA is flexible, online, and aggressively priced with bundled deals.
 
 But the most important difference isn't curriculum style — it's accreditation. NASM and ACE both hold **NCCA accreditation**, the gold standard that major gym chains use as a hiring filter. ISSA does not. That single factor shapes everything from job access to long-term career mobility.
 
-For the full landscape including NCSF and NSCA, see our [complete certification guide](/certifications/fitness-certification-guide).
+For the full market including NCSF and NSCA, see our [complete certification guide](/certifications/fitness-certification-guide).
 
 <StatHighlight
-  stats={[
+ stats={[
     { label: "NASM (Self-Study)", value: "$999" },
     { label: "ACE (Basic)", value: "$489" },
     { label: "ISSA (Base)", value: "$799" },
     { label: "NCCA Accredited", value: "2 of 3" }
-  ]}
+ ]}
 />
 
 ## The Accreditation Question
@@ -64,14 +67,14 @@ ISSA-certified trainers can absolutely find work — independent training, priva
 Upfront cost is the first thing people compare, but the real number is the **4-year total cost of ownership** — initial certification plus recertification, continuing education, and insurance.
 
 <RealMath
-  title="4-Year Total Cost of Ownership"
-  steps={[
-    "NASM: ~$699 (sale) + $199 recert + ~$200 CEUs = ~$1,298 (cert only)",
-    "ACE: $489 + $129 recert + ~$178 CEUs = ~$907 (cert only)",
-    "ISSA: $799 + $198 recert + ~$400 CEUs = ~$1,397 (cert only)",
-    "Add ~$800 liability insurance to all three over 4 years"
-  ]}
-  result="ACE is cheapest at ~$1,707 all-in. NASM runs ~$2,098. ISSA falls at ~$2,197. But NCSF beats all three at ~$1,499 all-in with full NCCA accreditation."
+ title="4-Year Total Cost of Ownership"
+ steps={[
+ "NASM: ~$699 (sale) + $199 recert + ~$200 CEUs = ~$1,298 (cert only)",
+ "ACE: $489 + $129 recert + ~$178 CEUs = ~$907 (cert only)",
+ "ISSA: $799 + $198 recert + ~$400 CEUs = ~$1,397 (cert only)",
+ "Add ~$800 liability insurance to all three over 4 years"
+ ]}
+ result="ACE is cheapest at ~$1,707 all-in. NASM runs ~$2,098. ISSA falls at ~$2,197. But NCSF beats all three at ~$1,499 all-in with full NCCA accreditation."
 />
 
 ISSA's headline pricing looks competitive, but the 4-year math tells a different story. Without NCCA accreditation and with higher cumulative costs than ACE, ISSA's value proposition depends heavily on their bundled deals (2-for-1 certifications) and the flexibility of their open-book exam format.
@@ -103,33 +106,33 @@ Each certification reflects a different philosophy about what trainers need to k
 ## Who Should Choose What
 
 <ChooseIf
-  cert="NASM"
-  items={[
-    "You want the strongest brand recognition on your resume",
-    "You're analytical and want a systematic program design framework",
-    "You plan to work in corrective exercise or sports performance",
-    "You want maximum employer acceptance from day one",
-  ]}
+ cert="NASM"
+ items={[
+ "You want the strongest brand recognition on your resume",
+ "You're analytical and want a systematic program design framework",
+ "You plan to work in corrective exercise or sports performance",
+ "You want maximum employer acceptance from day one",
+ ]}
 />
 
 <ChooseIf
-  cert="ACE"
-  items={[
-    "You're a natural communicator and people person",
-    "You want the lowest-cost NCCA-accredited option from a major brand",
-    "You prioritize behavior change and long-term client relationships",
-    "You're interested in health coaching alongside personal training",
-  ]}
+ cert="ACE"
+ items={[
+ "You're a natural communicator and people person",
+ "You want the lowest-cost NCCA-accredited option from a major brand",
+ "You prioritize behavior change and long-term client relationships",
+ "You're interested in health coaching alongside personal training",
+ ]}
 />
 
 <ChooseIf
-  cert="ISSA"
-  items={[
-    "You plan to train independently or online (not at a major gym chain)",
-    "You want bundled certifications at aggressive prices",
-    "You prefer an open-book, self-paced exam with no testing center",
-    "You're comfortable with a non-NCCA credential and the limitations that may bring",
-  ]}
+ cert="ISSA"
+ items={[
+ "You plan to train independently or online (not at a major gym chain)",
+ "You want bundled certifications at aggressive prices",
+ "You prefer an open-book, self-paced exam with no testing center",
+ "You're comfortable with a non-NCCA credential and the limitations that may bring",
+ ]}
 />
 
 ## The Fourth Option Most People Miss
@@ -200,5 +203,5 @@ NCSF is the value pick we recommend for most career changers. It carries the sam
 Yes. Many trainers hold multiple certifications. There's no conflict — you can maintain NASM, ACE, ISSA, and NCSF credentials simultaneously. Each has its own CEU and recertification requirements.
 
 <BottomLine
-  text="For most people, the choice comes down to NASM vs ACE — both are NCCA-accredited, widely accepted, and lead to the same career opportunities. NASM for program design rigor, ACE for coaching and communication. ISSA is a viable option for independent trainers who don't need NCCA accreditation. And if budget is your primary concern, NCSF offers the best value with full NCCA accreditation."
+ text="For most people, the choice comes down to NASM vs ACE — both are NCCA-accredited, widely accepted, and lead to the same career opportunities. NASM for program design rigor, ACE for coaching and communication. ISSA is a viable option for independent trainers who don't need NCCA accreditation. And if budget is your primary concern, NCSF offers the best value with full NCCA accreditation."
 />

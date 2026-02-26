@@ -22,9 +22,14 @@ Usage:
   python workflow_engine.py pre-publish --slug ncsf-cpt-review
 """
 
-import re, yaml, os, sys, json
+import re, yaml, os, sys, json, io
 from collections import defaultdict
 from datetime import datetime
+
+# Force UTF-8 on Windows console
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 # ============================================================
 # CONFIG
@@ -100,7 +105,7 @@ def extract_affiliate_ids(content):
     return list(set(re.findall(r'sjv\.io/c/3162789/(\d+)/12472', content)))
 
 def extract_h2s(body):
-    return re.findall(r'^## (.+)', body, re.MULTILINE)
+    return re.findall(r'^\s*## (.+)', body, re.MULTILINE)
 
 def section_word_counts(body):
     sections = re.split(r'^## ', body, flags=re.MULTILINE)
@@ -379,7 +384,7 @@ def load_all_articles(content_dir):
     for fname in os.listdir(content_dir):
         if fname.endswith('.mdx'):
             slug = fname.replace('.mdx', '')
-            with open(os.path.join(content_dir, fname)) as f:
+            with open(os.path.join(content_dir, fname), encoding='utf-8') as f:
                 articles[slug] = f.read()
     return articles
 
