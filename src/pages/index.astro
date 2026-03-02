@@ -63,6 +63,42 @@ const metadata = {
     ]}
   />
 
+  <Content
+    id="browse-categories"
+    tagline="Browse by Topic"
+    title="Explore our certification & career guides"
+    items={[
+      {
+        title: '<a href="/category/certifications" class="text-primary hover:underline font-semibold">Certifications</a> — 23 guides',
+        description: 'NASM, ACE, ISSA, NCSF comparisons and reviews. Real cost data and exam prep.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: '<a href="/category/career-change" class="text-primary hover:underline font-semibold">Career Change</a> — 11 guides',
+        description: 'Transition plans for teachers, nurses, military, and corporate professionals.',
+        icon: 'tabler:arrows-exchange',
+      },
+      {
+        title: '<a href="/category/career-building" class="text-primary hover:underline font-semibold">Career Building</a> — 11 guides',
+        description: 'Getting clients, pricing, marketing, and building your training business.',
+        icon: 'tabler:building',
+      },
+      {
+        title: '<a href="/category/career-growth" class="text-primary hover:underline font-semibold">Career Growth</a> — 11 guides',
+        description: 'Specializations, advanced certs, management, and scaling beyond $60K.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/homepage/strength-training.jpg',
+      alt: 'Browse personal training guides by category',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-white dark:bg-slate-900"></div>
+    </Fragment>
+  </Content>
+
   <Features
     id="why-trust-us"
     tagline="Why Pro Trainer Prep"
