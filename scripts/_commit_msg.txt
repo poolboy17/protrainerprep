@@ -1,0 +1,5 @@
+fix: remove internal SEO tier badges from breadcrumbs
+
+Removed the colored "Spoke", "Hub", "Sub-Hub", "Pillar" tier badge
+pills from breadcrumb navigation. These are internal SEO architecture
+labels that should not be visible to site visitors.

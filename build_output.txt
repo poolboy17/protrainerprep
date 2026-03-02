@@ -1,0 +1,509 @@
+[2m22:59:35[22m [34m[astrowind][39m Astrowind `./src/config.yaml` has been loaded.
+[2m22:59:35[22m [34m[content][39m Syncing content
+[2m22:59:36[22m [34m[content][39m Synced content
+[2m22:59:36[22m [34m[types][39m Generated [2m457ms[22m
+[2m22:59:36[22m [34m[build][39m output: [34m"static"[39m
+[2m22:59:36[22m [34m[build][39m mode: [34m"static"[39m
+[2m22:59:36[22m [34m[build][39m directory: [34mD:\dev\projects\protrainerprep\dist\[39m
+[2m22:59:36[22m [34m[build][39m Collecting build info...
+[2m22:59:36[22m [34m[build][39m [32m✓ Completed in 557ms.[39m
+[2m22:59:36[22m [34m[build][39m Building static entrypoints...
+[2m22:59:41[22m [34m[vite][39m [32m✓ built in 5.08s[39m
+[2m22:59:41[22m [34m[build][39m [32m✓ Completed in 5.12s.[39m
+
+[42m[30m building client (vite) [39m[49m
+[2m22:59:41[22m [34m[vite][39m transforming...
+[2m22:59:41[22m [34m[vite][39m [32m✓[39m 3 modules transformed.
+[2m22:59:41[22m [34m[vite][39m rendering chunks...
+[2m22:59:41[22m [34m[vite][39m [32m✓ built in 17ms[39m
+
+[42m[30m generating static routes [39m[49m
+[2m22:59:41[22m [32m▶[39m src/pages/404.astro
+[2m22:59:41[22m   [34m└─[39m [2m/404.html[22m [2m(+12ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/about.astro
+[2m22:59:41[22m   [34m└─[39m [2m/about/index.html[22m [2m(+9ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/affiliate-disclosure.md
+[2m22:59:41[22m   [34m└─[39m [2m/affiliate-disclosure/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/privacy.md
+[2m22:59:41[22m   [34m└─[39m [2m/privacy/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m [35mλ[39m src/pages/rss.xml.ts
+[2m22:59:41[22m   [34m└─[39m [2m/rss.xml[22m [2m(+101ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/terms.md
+[2m22:59:41[22m   [34m└─[39m [2m/terms/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/thank-you.astro
+[2m22:59:41[22m   [34m└─[39m [2m/thank-you/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/[...blog]/[category]/[...page].astro
+[2m22:59:41[22m   [34m├─[39m [2m/category/certifications/index.html[22m [2m(+20ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/category/certifications/2/index.html[22m [2m(+10ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/category/career-growth/index.html[22m [2m(+10ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/category/career-change/index.html[22m [2m(+9ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/category/career-building/index.html[22m [2m(+9ms)[22m 
+[2m22:59:41[22m   [34m└─[39m [2m/category/guides/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/[...blog]/[tag]/[...page].astro
+[2m22:59:41[22m   [34m├─[39m [2m/tag/certification/index.html[22m [2m(+7ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/certification/2/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/nasm/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/ace/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/issa/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/comparison/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/cost-comparison/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/recertification/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/ceu/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/cost/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-change/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-change/2/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/alternative-careers/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/transition/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-growth/index.html[22m [2m(+9ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/online-learning/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/continuing-education/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/review/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/specialization/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-transition/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/advanced-certification/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/expired/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/reinstatement/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/renewal/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/nutrition/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/scope-of-practice/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/budget/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/corporate-wellness/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/salary/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/benefits/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/exercise-physiologist/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-comparison/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/education/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/conference/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/networking/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/events/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/free/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/ncsf/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/courses/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/legal/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/liability/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/gym-manager/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/management/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/prenatal/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/postpartum/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/skills/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/business/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/cscs/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/strength-conditioning/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/older-adults/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/senior-fitness/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/youth-fitness/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/minors/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/over-50/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/new-trainer/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/niche/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/gym-employee/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/independent/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/exam-prep/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/study-guide/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/certification-review/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/career-changers/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/personal-training/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/military/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/veterans/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/nurses/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/medical-fitness/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/online-coaching/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/pricing/index.html[22m [2m(+6ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/part-time/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/certification-renewal/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/marketing/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/getting-clients/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/no-degree/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/teachers/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/cpt/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/financial-planning/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/over-40/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/second-career/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/clients/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/personal-trainer/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/cheap/index.html[22m [2m(+3ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/timeline/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/planning/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/fitness-careers/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/age/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/tag/guide/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m   [34m└─[39m [2m/tag/fitness-career/index.html[22m [2m(+2ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/[...blog]/[...page].astro
+[2m22:59:41[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+6ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/blog/2/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/blog/3/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/blog/4/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m└─[39m [2m/blog/5/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/index.astro
+[2m22:59:41[22m   [34m└─[39m [2m/index.html[22m [2m(+15ms)[22m 
+[2m22:59:41[22m [32m▶[39m src/pages/[...blog]/index.astro
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/nasm-vs-ace-vs-issa/index.html[22m [2m(+10ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/ace-recertification-cost/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/career-growth/alternative-careers-personal-trainers/index.html[22m [2m(+6ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/best-online-ceu-providers/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/career-growth/career-growth-guide/index.html[22m [2m(+6ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/certification-expired-what-now/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/ceu-recertification-guide/index.html[22m [2m(+6ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/career-growth/certified-nutrition-coach/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/cheapest-ceu-options/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/career-growth/corporate-wellness-jobs-trainers/index.html[22m [2m(+9ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/career-growth/exercise-physiologist-vs-personal-trainer/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/fitness-conference-guide-ceus/index.html[22m [2m(+8ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/free-ceus-personal-trainers/index.html[22m [2m(+5ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/nasm-recertification-cost/index.html[22m [2m(+4ms)[22m 
+[2m22:59:41[22m   [34m├─[39m [2m/certifications/ncsf-ceu-courses/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/ncsf-certification-renewal/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/personal-trainer-nutrition-scope/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/personal-trainer-to-gym-manager/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/prenatal-postpartum-training-certification/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/skills-certification-didnt-teach/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/strength-conditioning-coach-cscs-csc/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/training-older-adults-certification/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-growth/youth-fitness-certification/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/career-change-fitness-after-50/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/gym-vs-independent-personal-trainer/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/how-hard-is-personal-trainer-exam/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/issa-cpt-review/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/is-personal-training-good-career/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/military-to-personal-trainer/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/nurse-to-personal-trainer/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/online-vs-in-person-personal-training/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/part-time-personal-trainer/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/personal-trainer-100k/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/personal-trainer-certification-renewal/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/personal-trainer-marketing/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/personal-trainer-niche-specialization/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/personal-trainer-without-degree/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/personal-training-pricing/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/teacher-to-personal-trainer/index.html[22m [2m(+9ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/ace-cpt-review/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/afford-fitness-certification/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/best-cert-career-changers/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/career-change-fitness-after-40/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/career-building-guide/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/career-change-fitness-guide/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/cheapest-personal-trainer-certifications/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/corporate-to-certified-timeline/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/fitness-careers-no-gym/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/fitness-certification-guide/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-building/get-first-10-clients/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/career-change/is-it-too-late-to-become-personal-trainer/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/guides/how-to-become-personal-trainer/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/nasm-cpt-review/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/nasm-vs-ace/index.html[22m [2m(+4ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/nasm-vs-ncsf/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m├─[39m [2m/certifications/ncsf-cpt-review/index.html[22m [2m(+6ms)[22m 
+[2m22:59:42[22m   [34m└─[39m [2m/career-building/personal-trainer-salary/index.html[22m [2m(+5ms)[22m 
+[2m22:59:42[22m [32m✓ Completed in 920ms.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m22:59:42[22m   [32m▶[39m /_astro/og-image.B0qCCjFc_Z1xVUpC.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(1/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_oRHjk.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(2/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_Z6UwHG.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(3/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_1rMs2I.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(4/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_2tyPFu.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(5/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_g0r1Y.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(6/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_2h52oR.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(7/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_Zl94Ro.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(8/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_1fNIjK.webp [2m(reused cache entry)[22m [2m(+4ms)[22m [2m(9/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_2hfngL.webp [2m(reused cache entry)[22m [2m(+4ms)[22m [2m(10/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_Z25j9X0.webp [2m(reused cache entry)[22m [2m(+4ms)[22m [2m(11/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_Z6YpcL.webp [2m(reused cache entry)[22m [2m(+4ms)[22m [2m(12/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_ZvN3Lh.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(13/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_ZneYV0.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(14/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_ZcB3qd.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(15/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_2dSaWr.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(16/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_TdKDJ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(17/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_25RrDh.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(18/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_2gPcy6.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(19/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_ZauvSU.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(20/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_Z1Hj5gS.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(21/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_1YwmVn.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(22/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_1wMjcI.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(23/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_ZItaWj.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(24/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_D2WDG.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(25/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_29oPKP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(26/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_2ersY1.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(27/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_1UhRys.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(28/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_Z2bq8Ta.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(29/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_Z1hJA7D.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(30/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_205NbV.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(31/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_ZM9P0i.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(32/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_Z1zXiHc.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(33/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_Z7MhaR.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(34/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_1wrER6.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(35/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_1i357L.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(36/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_Z1J9IYu.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(37/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_ZqCuy6.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(38/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_ypiVq.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(39/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_L9qIF.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(40/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_aSVfc.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(41/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_Z8zKzD.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(42/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_ZtGPTO.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(43/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_lnJgB.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(44/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_1U9jjh.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(45/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_Z2ehAvb.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(46/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_Z1JQom.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(47/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_2xbpk.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(48/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_xwxW7.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(49/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_ZQFMgh.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(50/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_ZoR3dk.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(51/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_17xtzD.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(52/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_Z6MKBc.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(53/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_ZCzkLa.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(54/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_2fhwkP.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(55/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_1aiWl7.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(56/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_1qM6Em.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(57/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_1NDKxt.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(58/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_Z1lgr4z.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(59/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_244Arg.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(60/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-recertification-cost.DoggNj90_2JOlM.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(61/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_ZylpYL.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(62/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace-vs-issa.ifczdo9D_234L6u.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(63/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-online-ceu-providers.CXk3Oale_Z19EONW.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(64/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-conference-guide-ceus.BgcddMXE_Z1iPgK5.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(65/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certification-expired-what-now.CdA9W8fN_2rwTCM.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(66/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/cheapest-ceu-options.DK39euaK_ZKLwVO.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(67/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/free-ceus-personal-trainers.4NB1e9Fr_17M3Ri.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(68/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-recertification-cost.NGYs_MdE_11W412.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(69/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-certification-renewal.BFoW4KHh_ZWc9lm.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(70/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-growth-guide.BZEjx81R_16Fnff.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(71/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-ceu-courses.tBltOMhq_13xqdn.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(72/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_Z1q4Ysa.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(73/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/issa-cpt-review.SSVAZUI4_sPbcY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(74/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_1t5OpF.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(75/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_ZRqvR9.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(76/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_17UAHU.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(77/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_Z1oiAp3.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(78/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_2jF6Cf.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(79/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_Z1wmnI0.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(80/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_1noydj.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(81/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_2uhjCE.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(82/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_Z26o9kK.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(83/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_1BNtEp.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(84/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_Z1SBzHK.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(85/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_2fbxko.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(86/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_fL2D5.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(87/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_Z16M6Av.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(88/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_Z1h3CxT.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(89/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_ZEFIxr.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(90/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_ZoJwFt.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(91/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_18PvO7.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(92/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_1gHfJn.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(93/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_YbPXY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(94/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_Z1aso3w.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(95/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_2tbsH6.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(96/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_Z1KjBHk.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(97/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_Z2uySA0.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(98/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_1m2XYK.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(99/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_Z8qlIX.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(100/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_Z5Umol.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(101/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_2tGJc.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(102/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_Z2cURAj.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(103/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_Z1cRKXQ.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(104/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_ZpGnfk.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(105/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_Z2oU61i.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(106/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_Z2qcetR.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(107/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_1gcf6c.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(108/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_MxOuM.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(109/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_MrN6C.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(110/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_Z1gOp2y.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(111/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_Z29ACOS.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(112/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_M2RdU.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(113/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_Z28wddq.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(114/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_Zi7j8y.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(115/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_Z1Rf7d0.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(116/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_6KMAa.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(117/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_ZswSeM.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(118/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_1UctGT.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(119/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_ZMqOwu.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(120/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_1rBwJL.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(121/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_1LRQf7.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(122/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_Z1amCth.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(123/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_1FUnL.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(124/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_ZdDhP1.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(125/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_ZqDebR.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(126/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_ePLvq.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(127/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_Z1kAGpw.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(128/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_3modY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(129/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_1lICGI.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(130/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_Z1lNNQ3.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(131/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_2aVoO4.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(132/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ace-cpt-review.DTuqghSu_ZfG2rO.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(133/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/best-cert-career-changers.Dg8-qnfY_Zuks9t.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(134/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_Z2dN05z.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(135/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-certification-guide.T8Mm7E7t_Z2wCVfk.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(136/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-cpt-review.DyYNymMq_NxjmJ.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(137/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ace.DMYy10st_Z10TMku.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(138/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/ncsf-cpt-review.DC4WbNYo_Zip5cL.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(139/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nasm-vs-ncsf.CT4zgm2I_KEU0C.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(140/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/alternative-careers-personal-trainers.BXeKyiuL_Z1PYS6B.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(141/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/certified-nutrition-coach.4EGlWHoy_Z2jRDEI.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(142/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/exercise-physiologist-vs-personal-trainer.C2Y-m7aP_1BNt1t.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(143/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-wellness-jobs-trainers.CHEUHMXh_ZLn121.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(144/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_1OmJYo.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(145/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_Z1u0Dve.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(146/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-nutrition-scope.NJnd-7kN_Z1UfF8n.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(147/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_Z2cCcwh.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(148/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_8c23h.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(149/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_1BQzxb.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(150/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_nVAJk.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(151/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__Z2dsPX5.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(152/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_VNGm7.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(153/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_Z1Ye9u0.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(154/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_1dwR2v.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(155/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_ZKGOda.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(156/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_1m8XXW.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(157/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_27qizx.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(158/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_ZwY5ng.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(159/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_Z1bomij.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(160/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_Z21XDxN.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(161/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_1uYN3T.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(162/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_1eabuX.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(163/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__10Tzpg.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(164/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_1HTpgP.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(165/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_Z1NzAvw.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(166/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_1yLcus.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(167/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_Z19odfn.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(168/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_53yMd.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(169/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_29jx0r.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(170/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_Z2nMMNQ.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(171/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_Z1yi6MX.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(172/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_Z2vL8gs.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(173/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_1IjClR.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(174/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_1wLvLM.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(175/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__2eEtRz.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(176/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_1qvzRs.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(177/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_ZMJIUK.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(178/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_bQKnz.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(179/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_Z1eU2iN.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(180/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_Z28Tnfj.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(181/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_Z2hHvQR.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(182/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_Z1BopUi.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(183/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_ZEv67M.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(184/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_Z1v5nnh.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(185/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_2rXzWm.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(186/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_ZFNjS7.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(187/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__Z2u8LO0.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(188/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_Z1hGkl0.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(189/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_gaF34.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(190/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_2vJYnU.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(191/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_20Opat.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(192/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_ZgITsg.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(193/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_kbFV1.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(194/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_ZNE1eb.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(195/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_Z1h617A.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(196/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_vFe4F.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(197/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_1lEoc9.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(198/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_Z1sMeJb.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(199/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__2tMB1n.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(200/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_2eGCpn.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(201/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_CLbSD.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(202/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_ZaMsL9.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(203/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_OHkYa.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(204/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/part-time-personal-trainer.B5Z8fEB4_Z1IgOSH.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(205/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-to-gym-manager.Cc9CbKE4_1B9nRg.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(206/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_Z1mgiLu.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(207/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/youth-fitness-certification.CXaDU7JA_gqkUS.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(208/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-guide.DHVYsPgH_ZAOenR.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(209/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/military-to-personal-trainer.BkK1GYZ8_f0Q1G.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(210/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-50.BeXwTpc4_15xquN.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(211/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-without-degree.Bu-X-8u__Z1jqOQj.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(212/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/nurse-to-personal-trainer.DZ3Ur-OD_Z1Dr7uW.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(213/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/teacher-to-personal-trainer.nHkX9yxA_17c9VP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(214/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/afford-fitness-certification.CCZxSz0l_Z1hr0VB.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(215/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-change-fitness-after-40.Z59IgYtU_Z1G97zM.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(216/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_gzex1.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(217/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_Z4W9Cv.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(218/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/corporate-to-certified-timeline.RmrfFX6e_Z5iAPf.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(219/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_vwVhP.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(220/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_Z1XVDnm.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(221/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_Z1jDQAT.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(222/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_ZEta8N.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(223/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_22wlU9.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(224/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_Z1rciQV.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(225/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_vjJAh.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(226/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_Qlf1C.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(227/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_19qW7c.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(228/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_12teS5.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(229/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_LpOpb.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(230/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_40VYt.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(231/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_1IvdXH.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(232/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_ZrOI5I.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(233/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_Z18lrF.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(234/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_CdkOH.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(235/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_Z2j0w5N.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(236/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_ZF6zWd.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(237/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_v4TJv.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(238/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_1LVBcY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(239/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_Z1XDgOw.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(240/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_9fa8l.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(241/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_ZBvgNU.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(242/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_Z6VAHz.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(243/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_KDLgo.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(244/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_13jhLY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(245/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_sSSyX.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(246/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_Z14Yhjt.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(247/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_2i3dFf.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(248/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_Z1zcuMY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(249/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_Z1TqMO1.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(250/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_uLBMg.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(251/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_1qgBKk.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(252/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_MQUCU.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(253/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_Z2ucsOp.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(254/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_1Rv6RD.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(255/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_Zg124N.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(256/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_2qkxfd.jpg [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(257/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_Z1b4NAS.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(258/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_Z1Hxi3r.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(259/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_Z1CWcIh.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(260/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_Z27PkaY.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(261/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_fDfC8.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(262/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_Z18rK6v.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(263/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_KMe6g.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(264/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_15d8E3.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(265/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_1PEN2L.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(266/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_Z21U76E.jpg [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(267/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_hAgKo.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(268/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_Z1vaNVU.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(269/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_ZUfdsS.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(270/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_Z2sPALv.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(271/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_2gnUgv.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(272/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_Z2mVSLN.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(273/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_2kXu96.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(274/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_Z2eHL1X.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(275/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_Z2eYkKR.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(276/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/fitness-careers-no-gym.dvtf278s_Z1TcBdn.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(277/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-it-too-late-to-become-personal-trainer.MnyaoFF0_ZfT2SD.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(278/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_Z183DDk.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(279/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/is-personal-training-good-career.XIy1mpoF_2psYIf.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(280/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/gym-vs-independent-personal-trainer.B_xLYg5Z_27cBNs.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(281/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/online-vs-in-person-personal-training.BTMLStUS_TKshH.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(282/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-marketing.CMqw2aFL_1zipsQ.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(283/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-100k.B_X8hr_f_ZjA2tG.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(284/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-training-pricing.DKwSRVOv_q1UCx.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(285/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/career-building-guide.Dl_3HWxr_oRYQa.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(286/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/get-first-10-clients.D92ZF27M_xoXzV.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(287/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/personal-trainer-salary.C2qvEpbd_Z13cLzY.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(288/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/trainer-session.DfLZnfZD_a7zI3.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(289/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/strength-training.BWxqFnQs_1fbffI.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(290/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/how-to-become-personal-trainer.DjnwlAyz_1qh1AE.webp [2m(reused cache entry)[22m [2m(+3ms)[22m [2m(291/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/trainer-client.BngGEgUS_2b6C5N.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(292/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/hero-gym.yVSlTJuQ_1iYbIo.webp [2m(reused cache entry)[22m [2m(+2ms)[22m [2m(293/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/trainer-session.DfLZnfZD_Z1dF5xS.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(294/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/strength-training.BWxqFnQs_1TU9Ii.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(295/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/hero-gym.yVSlTJuQ_KpRke.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(296/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/trainer-client.BngGEgUS_Z2oJCrL.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(297/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/hero-gym.yVSlTJuQ_WVC8f.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(298/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/hero-gym.yVSlTJuQ_1CJncL.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(299/300)[22m
+[2m22:59:42[22m   [32m▶[39m /_astro/hero-gym.yVSlTJuQ_ZHPXit.webp [2m(reused cache entry)[22m [2m(+1ms)[22m [2m(300/300)[22m
+[2m22:59:42[22m [32m✓ Completed in 70ms.
+[39m
+[2m22:59:42[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+✓ Successfully compressed a total of 1 CSS file for 735 Bytes.
+[2m22:59:51[22m [34m[build][39m Waiting for integration [1m"astro-compress"[22m, hook [1m"astro:build:done"[22m...
+✓ Successfully compressed a total of 165 HTML files for 817.45 KB.
+[2m22:59:51[22m [34m[astrowind][39m Updating `robots.txt` with `sitemap-index.xml` ...
+[2m22:59:51[22m [34m[build][39m 164 page(s) built in [1m15.89s[22m
+[2m22:59:51[22m [34m[build][39m [1mComplete![22m
