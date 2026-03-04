@@ -11,6 +11,7 @@ import icon from 'astro-icon';
 import compress from 'astro-compress';
 import type { AstroIntegration } from 'astro';
 
+import sentry from '@sentry/astro';
 import astrowind from './vendor/integration';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter';
@@ -76,6 +77,17 @@ export default defineConfig({
 
     astrowind({
       config: './src/config.yaml',
+    }),
+
+    sentry({
+      dsn: 'https://b2444d1c6a314d090437d15631d1e222@o4508247438655488.ingest.us.sentry.io/4510983744192512',
+      org: 'none-4o0',
+      project: 'protrainerprep',
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+      sourceMapsUploadOptions: {
+        project: 'protrainerprep',
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+      },
     }),
   ],
 
