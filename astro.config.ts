@@ -25,7 +25,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   site: 'https://protrainerprep.com',
-  output: 'hybrid',
+  output: 'static',
   adapter: netlify(),
 
   integrations: [
